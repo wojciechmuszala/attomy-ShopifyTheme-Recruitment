@@ -1,0 +1,16 @@
+{
+  "name": "rekrutacja",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "preview": "vite preview",
+    "theme": "shopify theme dev"
+  },
+  "devDependencies": {
+    "sass-embedded": "^1.93.2",
+    "vite": "^7.1.7"
+  }
+}
