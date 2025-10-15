@@ -1,12 +1,12 @@
 <div {{ block.shopify_attributes }}>
   {%- if block.settings['faq-item-question'] != blank -%}
-    <div class="faq__question">
+    <div class="faq__item-question">
       {{ block.settings['faq-item-question'] }}
     </div>
   {%- endif -%}
 
   {%- if block.settings['faq-item-answer'] != blank -%}
-    <div class="faq__answear">
+    <div class="faq__item-answear">
       {{ block.settings['faq-item-answer'] }}
     </div>
   {%- endif -%}
