@@ -1,0 +1,19 @@
+<ul class="faq__list" {{ block.shopify_attributes }}>
+  {% content_for 'blocks' %}
+</ul>
+
+{% schema %}
+{
+  "name": "Question",
+  "blocks": [
+    {
+      "type": "_faq-item"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Questions list"
+    }
+  ]
+}
+{% endschema %}

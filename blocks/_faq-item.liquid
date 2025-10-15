@@ -1,0 +1,38 @@
+<div {{ block.shopify_attributes }}>
+  {%- if block.settings['faq-item-question'] != blank -%}
+    <div class="faq__question">
+      {{ block.settings['faq-item-question'] }}
+    </div>
+  {%- endif -%}
+
+  {%- if block.settings['faq-item-answer'] != blank -%}
+    <div class="faq__answear">
+      {{ block.settings['faq-item-answer'] }}
+    </div>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "Question",
+  "tag": "li",
+  "class": "faq__item",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Question",
+      "id": "faq-item-question"
+    },
+    {
+      "type": "richtext",
+      "label": "Answer",
+      "id": "faq-item-answer"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Question"
+    }
+  ]
+}
+{% endschema %}

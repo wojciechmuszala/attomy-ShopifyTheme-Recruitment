@@ -1,0 +1,32 @@
+<ul class="faq__group" {{ block.shopify_attributes }}>
+  <li class="faq__group-item">
+    <button class="faq__group-toggle" data-type="faq-group">
+      {{ block.settings.name }}
+    </button>
+
+    {% content_for 'blocks' %}
+  </li>
+</ul>
+
+{% schema %}
+{
+  "name": "FAQ group",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Group name",
+      "id": "name"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "_faq-list"
+    }
+  ],
+  "presets": [
+    {
+      "name": "FAQ group"
+    }
+  ]
+}
+{% endschema %}
