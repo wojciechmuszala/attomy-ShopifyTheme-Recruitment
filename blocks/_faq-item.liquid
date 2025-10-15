@@ -1,8 +1,8 @@
 <div class="" {{ block.shopify_attributes }} data-role="collapse">
   {%- if block.settings['faq-item-question'] != blank -%}
-    <div class="faq__item-question" data-action="toggle">
+    <button class="faq__item-question" data-action="toggle">
       {{ block.settings['faq-item-question'] }}
-    </div>
+    </button>
   {%- endif -%}
 
   {%- if block.settings['faq-item-answer'] != blank -%}

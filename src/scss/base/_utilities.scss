@@ -23,7 +23,6 @@
 
     > [data-action="toggle"] {
       &::after {
-        display: block;
         content: "-";
       }
     }
@@ -37,6 +36,10 @@
     &::after {
       display: block;
       content: "+";
+      padding-left: 1rem;
+      font-family: var(--typo-font-family-primary);
+      font-size: 4rem;
+      font-weight: 200;
     }
   }
 

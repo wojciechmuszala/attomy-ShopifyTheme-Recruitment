@@ -1,19 +1,16 @@
-<li
+<div
   class="faq__group-list"
   data-type="faq-group"
   data-group-name="{{ block.settings.name }}"
   data-collapse-close-rest
   {{ block.shopify_attributes }}
 >
-  <div class="faq__group-item">
-    {% content_for 'blocks' %}
-  </div>
-</li>
+  {% content_for 'blocks' %}
+</div>
 
 {% schema %}
 {
   "name": "FAQ group",
-  "tag": "ul",
   "class": "faq__group",
   "settings": [
     {

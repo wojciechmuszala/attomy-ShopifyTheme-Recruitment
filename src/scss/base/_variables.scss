@@ -5,7 +5,13 @@
   --color-gray-light: #eaeaea;
   --color-gray-ultra-light: #f5f5f5;
 
+  --color-navy-blue: #0a202e;
+
   // Typography
+  --typo-font-family-primary: "Poppins", "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
+  --typo-font-family-secondary: "Rubik", "Noto Sans", "Helvetica Neue", Arial,
+    sans-serif;
   --typo-font-size-xl: 2.4rem;
   --typo-font-size-l: 2rem;
   --typo-font-size-m: 2rem;
@@ -13,6 +19,7 @@
 
   // Utilities
   --bg-body: var(--color-grey-ultra-light);
+  --color-text: var(var(--color-navy-blue));
 
   --border-radius-big: 24px;
   --border-radius-small: 12px;
