@@ -36,17 +36,38 @@
   }
 
   &__list {
-    margin: 24px 0;
+    @include mixins.reset-ul;
+    & {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin: 24px 0;
+    }
+
     &-wrapper {
       padding: 0 24px;
     }
   }
 
   &__item {
+    padding: 0;
+
     &-question {
+      padding: var(--card-padding);
     }
 
     &-answer {
+      padding: 0 var(--card-padding);
+
+      .collapse-content {
+        margin: 0 0 var(--card-padding);
+
+        > p {
+          border-top: 1px solid var(--color-gray);
+          padding-top: var(--card-padding);
+          margin: 0;
+        }
+      }
     }
   }
 }

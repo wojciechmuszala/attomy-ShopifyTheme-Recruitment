@@ -2,10 +2,16 @@
   background-color: var(--color-white);
   border-radius: var(--border-radius-big);
   border: 1px solid var(--color-gray);
-  padding: 36px;
+  padding: var(--card-padding);
 
   &--tight {
-    padding: 16px 24px;
+    padding: var(--card-tight-padding);
+  }
+
+  @media (min-width: 490px) {
+    &--tight {
+      padding: var(--card-tight-padding) 24px;
+    }
   }
 }
 

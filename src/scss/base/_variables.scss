@@ -16,4 +16,12 @@
 
   --border-radius-big: 24px;
   --border-radius-small: 12px;
+
+  --card-padding: 20px;
+  --card-tight-padding: 16px;
+
+  @media (min-width: 490px) {
+    --card-padding: 36px;
+    --card-tight-padding: 20px;
+  }
 }
