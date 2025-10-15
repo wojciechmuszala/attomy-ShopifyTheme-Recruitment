@@ -1,13 +1,15 @@
-<div {{ block.shopify_attributes }}>
+<div class="collapse-content" {{ block.shopify_attributes }} data-role="collapse">
   {%- if block.settings['faq-item-question'] != blank -%}
-    <div class="faq__item-question">
+    <div class="faq__item-question" data-action="toggle">
       {{ block.settings['faq-item-question'] }}
     </div>
   {%- endif -%}
 
   {%- if block.settings['faq-item-answer'] != blank -%}
-    <div class="faq__item-answear">
-      {{ block.settings['faq-item-answer'] }}
+    <div class="faq__item-answear collapse-content-container">
+      <div class="collapse-content">
+        {{ block.settings['faq-item-answer'] }}
+      </div>
     </div>
   {%- endif -%}
 </div>
@@ -16,7 +18,7 @@
 {
   "name": "Question",
   "tag": "li",
-  "class": "faq__item",
+  "class": "faq__item custom-card",
   "settings": [
     {
       "type": "text",

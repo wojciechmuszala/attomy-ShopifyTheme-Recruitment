@@ -1,10 +1,11 @@
-<ul class="faq__list" {{ block.shopify_attributes }}>
+<ul class="faq__list collapse-content" {{ block.shopify_attributes }}>
   {% content_for 'blocks' %}
 </ul>
 
 {% schema %}
 {
   "name": "Question",
+  "class": "faq__list-wrapper collapse-content-container",
   "blocks": [
     {
       "type": "_faq-item"

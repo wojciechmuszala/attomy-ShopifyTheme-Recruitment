@@ -1,4 +1,8 @@
+@use "../base/mixins";
+
 .faq {
+  text-align: left;
+
   &__search {
     &-input {
     }
@@ -9,15 +13,33 @@
     }
   }
 
-  &__group {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px 0;
   }
 
   &__group {
+    @include mixins.reset-ul;
+  }
+
+  &__group {
+    &-item {
+      background-color: var(--color-gray-light);
+      border-radius: var(--border-radius-big);
+    }
+
     &-toggle {
+      width: 100%;
+      text-align: left;
     }
   }
 
   &__list {
+    margin: 24px 0;
+    &-wrapper {
+      padding: 0 24px;
+    }
   }
 
   &__item {
