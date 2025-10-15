@@ -162,12 +162,186 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "faq_GgMm9r": {
+      "type": "faq",
+      "blocks": {
+        "faq_group_qgYNQf": {
+          "type": "_faq-group",
+          "name": "FAQ group",
+          "settings": {
+            "name": "Gwarancja i serwis"
+          },
+          "blocks": {
+            "faq_list_hfP8w8": {
+              "type": "_faq-list",
+              "name": "Questions list",
+              "settings": {},
+              "blocks": {
+                "faq_item_8zPeta": {
+                  "type": "_faq-item",
+                  "name": "Question",
+                  "settings": {
+                    "faq-item-question": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+                    "faq-item-answer": "<p>Nemo fuga sequi sunt perspiciatis, nihil aperiam quo provident mollitia, quidem, accusantium repudiandae distinctio facilis. Sunt possimus corporis cupiditate provident harum. Sed!</p>"
+                  },
+                  "blocks": {}
+                },
+                "faq_item_yrkRYJ": {
+                  "type": "_faq-item",
+                  "name": "Question",
+                  "settings": {
+                    "faq-item-question": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+                    "faq-item-answer": "<p>Nemo fuga sequi sunt perspiciatis, nihil aperiam quo provident mollitia, quidem, accusantium repudiandae distinctio facilis. Sunt possimus corporis cupiditate provident harum. Sed!</p>"
+                  },
+                  "blocks": {}
+                },
+                "faq_item_V9LmYb": {
+                  "type": "_faq-item",
+                  "name": "Question",
+                  "settings": {
+                    "faq-item-question": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+                    "faq-item-answer": "<p>Nemo fuga sequi sunt perspiciatis, nihil aperiam quo provident mollitia, quidem, accusantium repudiandae distinctio facilis. Sunt possimus corporis cupiditate provident harum. Sed!</p>"
+                  },
+                  "blocks": {}
+                },
+                "faq_item_8KpAqq": {
+                  "type": "_faq-item",
+                  "name": "Question",
+                  "settings": {
+                    "faq-item-question": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+                    "faq-item-answer": "<p>Nemo fuga sequi sunt perspiciatis, nihil aperiam quo provident mollitia, quidem, accusantium repudiandae distinctio facilis. Sunt possimus corporis cupiditate provident harum. Sed!</p>"
+                  },
+                  "blocks": {}
+                },
+                "faq_item_mWaW88": {
+                  "type": "_faq-item",
+                  "name": "Question",
+                  "settings": {
+                    "faq-item-question": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+                    "faq-item-answer": "<p>Nemo fuga sequi sunt perspiciatis, nihil aperiam quo provident mollitia, quidem, accusantium repudiandae distinctio facilis. Sunt possimus corporis cupiditate provident harum. Sed!</p>"
+                  },
+                  "blocks": {}
+                },
+                "faq_item_aEVCgf": {
+                  "type": "_faq-item",
+                  "name": "Question",
+                  "settings": {
+                    "faq-item-question": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+                    "faq-item-answer": "<p>Nemo fuga sequi sunt perspiciatis, nihil aperiam quo provident mollitia, quidem, accusantium repudiandae distinctio facilis. Sunt possimus corporis cupiditate provident harum. Sed!</p>"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "faq_item_8zPeta",
+                "faq_item_yrkRYJ",
+                "faq_item_V9LmYb",
+                "faq_item_8KpAqq",
+                "faq_item_mWaW88",
+                "faq_item_aEVCgf"
+              ]
+            }
+          },
+          "block_order": [
+            "faq_list_hfP8w8"
+          ]
+        },
+        "faq_group_CVRMmV": {
+          "type": "_faq-group",
+          "name": "FAQ group",
+          "settings": {
+            "name": "Produkty"
+          },
+          "blocks": {
+            "faq_list_neXpTr": {
+              "type": "_faq-list",
+              "name": "Questions list",
+              "settings": {},
+              "blocks": {
+                "faq_item_kGNzgG": {
+                  "type": "_faq-item",
+                  "name": "Question",
+                  "settings": {
+                    "faq-item-question": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+                    "faq-item-answer": "<p>Nemo fuga sequi sunt perspiciatis, nihil aperiam quo provident mollitia, quidem, accusantium repudiandae distinctio facilis. Sunt possimus corporis cupiditate provident harum. Sed!</p>"
+                  },
+                  "blocks": {}
+                },
+                "faq_item_3BHycT": {
+                  "type": "_faq-item",
+                  "name": "Question",
+                  "settings": {
+                    "faq-item-question": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+                    "faq-item-answer": "<p>Nemo fuga sequi sunt perspiciatis, nihil aperiam quo provident mollitia, quidem, accusantium repudiandae distinctio facilis. Sunt possimus corporis cupiditate provident harum. Sed!</p>"
+                  },
+                  "blocks": {}
+                },
+                "faq_item_Ez6ymU": {
+                  "type": "_faq-item",
+                  "name": "Question",
+                  "settings": {
+                    "faq-item-question": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+                    "faq-item-answer": "<p>Nemo fuga sequi sunt perspiciatis, nihil aperiam quo provident mollitia, quidem, accusantium repudiandae distinctio facilis. Sunt possimus corporis cupiditate provident harum. Sed!</p>"
+                  },
+                  "blocks": {}
+                },
+                "faq_item_9MEnHK": {
+                  "type": "_faq-item",
+                  "name": "Question",
+                  "settings": {
+                    "faq-item-question": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+                    "faq-item-answer": "<p>Nemo fuga sequi sunt perspiciatis, nihil aperiam quo provident mollitia, quidem, accusantium repudiandae distinctio facilis. Sunt possimus corporis cupiditate provident harum. Sed!</p>"
+                  },
+                  "blocks": {}
+                },
+                "faq_item_pMfbVY": {
+                  "type": "_faq-item",
+                  "name": "Question",
+                  "settings": {
+                    "faq-item-question": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+                    "faq-item-answer": "<p>Nemo fuga sequi sunt perspiciatis, nihil aperiam quo provident mollitia, quidem, accusantium repudiandae distinctio facilis. Sunt possimus corporis cupiditate provident harum. Sed!</p>"
+                  },
+                  "blocks": {}
+                },
+                "faq_item_NXGhNV": {
+                  "type": "_faq-item",
+                  "name": "Question",
+                  "settings": {
+                    "faq-item-question": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+                    "faq-item-answer": "<p>Nemo fuga sequi sunt perspiciatis, nihil aperiam quo provident mollitia, quidem, accusantium repudiandae distinctio facilis. Sunt possimus corporis cupiditate provident harum. Sed!</p>"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "faq_item_kGNzgG",
+                "faq_item_3BHycT",
+                "faq_item_Ez6ymU",
+                "faq_item_9MEnHK",
+                "faq_item_pMfbVY",
+                "faq_item_NXGhNV"
+              ]
+            }
+          },
+          "block_order": [
+            "faq_list_neXpTr"
+          ]
+        }
+      },
+      "block_order": [
+        "faq_group_qgYNQf",
+        "faq_group_CVRMmV"
+      ],
+      "name": "FAQ",
+      "settings": {}
     }
   },
   "order": [
     "6a3bb789-ce10-45f5-ae67-e2063ef8c76b",
     "featured_collection",
     "f1552b18-6017-4231-810d-74e61da22c37",
-    "38cdf60f-e431-43b5-aac3-7e6215447d67"
+    "38cdf60f-e431-43b5-aac3-7e6215447d67",
+    "faq_GgMm9r"
   ]
 }

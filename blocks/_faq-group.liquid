@@ -1,18 +1,20 @@
-<ul class="faq__group" data-collapse-close-rest {{ block.shopify_attributes }}>
-  <li class="faq__group-item" data-role="collapse">
-    <button class="faq__group-toggle custom-card custom-card--tight" data-type="faq-group" data-action="toggle">
-      <p>
-        {{ block.settings.name }}
-      </p>
-    </button>
-
+<li
+  class="faq__group-list"
+  data-type="faq-group"
+  data-group-name="{{ block.settings.name }}"
+  data-collapse-close-rest
+  {{ block.shopify_attributes }}
+>
+  <div class="faq__group-item">
     {% content_for 'blocks' %}
-  </li>
-</ul>
+  </div>
+</li>
 
 {% schema %}
 {
   "name": "FAQ group",
+  "tag": "ul",
+  "class": "faq__group",
   "settings": [
     {
       "type": "text",

@@ -1,11 +1,26 @@
-<ul class="faq__list collapse-content" {{ block.shopify_attributes }}>
-  {% content_for 'blocks' %}
-</ul>
+<div data-role="collapse">
+  <button class="faq__group-toggle custom-card custom-card--tight" data-action="toggle">
+    <p>
+      {{ block.settings.name }}
+    </p>
+  </button>
+  <div class=" faq__list-wrapper collapse-content-container">
+    <ul class="faq__list collapse-content" {{ block.shopify_attributes }}>
+      {% content_for 'blocks' %}
+    </ul>
+  </div>
+</div>
 
 {% schema %}
 {
   "name": "Question",
-  "class": "faq__list-wrapper collapse-content-container",
+  "settings": [
+    {
+      "type": "text",
+      "label": "List parent name",
+      "id": "name"
+    }
+  ],
   "blocks": [
     {
       "type": "_faq-item"

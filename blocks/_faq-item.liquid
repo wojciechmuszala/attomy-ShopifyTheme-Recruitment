@@ -1,4 +1,4 @@
-<div class="collapse-content" {{ block.shopify_attributes }} data-role="collapse">
+<div class="" {{ block.shopify_attributes }} data-role="collapse">
   {%- if block.settings['faq-item-question'] != blank -%}
     <div class="faq__item-question" data-action="toggle">
       {{ block.settings['faq-item-question'] }}
@@ -18,7 +18,7 @@
 {
   "name": "Question",
   "tag": "li",
-  "class": "faq__item custom-card",
+  "class": "faq__item custom-card collapse-content",
   "settings": [
     {
       "type": "text",
