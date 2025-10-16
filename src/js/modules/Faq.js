@@ -57,6 +57,19 @@ class Faq {
     });
   }
 
+  scrollNavToActive() {
+    if (!this.faqNavEl) return;
+
+    const activeBtn = this.faqNavEl.querySelector(".faq__nav-item.active");
+    if (!activeBtn) return;
+
+    activeBtn.scrollIntoView({
+      behavior: "smooth",
+      inline: "center",
+      block: "nearest",
+    });
+  }
+
   setActiveGroup(groupId) {
     this.faqGroupEls.forEach((group) => {
       group.classList.remove("active");
@@ -77,6 +90,7 @@ class Faq {
       );
       if (activeBtn) activeBtn.classList.add("active");
     }
+    // this.scrollNavToActive();
   }
 }
 
