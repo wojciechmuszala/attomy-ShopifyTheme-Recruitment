@@ -1,0 +1,61 @@
+<div class="page-hero-banner__image-wrapper">
+  {%- if section.settings.image != blank -%}
+    {%- assign widths = '490,750,1080,1440,1920,2560,3840' -%}
+    {%- capture sizes -%}
+          (min-width: 2560px) 2560px,
+          (min-width: 1920px) 1920px,
+          (min-width: 1440px) 1440px,
+          (min-width: 1080px) 1080px,
+          (min-width: 750px) 750px,
+          100vw
+        {%- endcapture -%}
+
+    {{
+      section.settings.image
+      | image_url: width: 3840
+      | image_tag: loading: 'lazy', sizes: sizes, widths: widths, class: 'page-hero-banner__image'
+    }}
+  {%- else -%}
+    {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg page-hero-banner__image' }}
+  {%- endif -%}
+</div>
+<div class="page-hero-banner__content">
+  <p class="page-hero-banner__subtitle">{{ section.settings.subtitle }}</p>
+  <h1 class="page-hero-banner__title">{{ section.settings.title }}</h1>
+</div>
+
+{% schema %}
+{
+  "name": "Hero Banner",
+  "tag": "section",
+  "class": "page-hero-banner",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Twój tytuł tutaj"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Twój podtytuł tutaj"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero Banner",
+      "category": "Hero"
+    }
+  ],
+  "enabled_on": {
+    "templates": ["page"]
+  }
+}
+{% endschema %}

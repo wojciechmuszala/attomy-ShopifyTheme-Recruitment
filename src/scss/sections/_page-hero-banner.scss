@@ -1,0 +1,50 @@
+.page-hero-banner {
+  position: relative;
+
+  &__image-wrapper {
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--typo-font-family-secondary);
+    font-size: 13px;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: -2%;
+    line-height: 170%;
+
+    &::before {
+      display: block;
+      content: "";
+      width: 11px;
+      height: 11px;
+      background-color: var(--color-white);
+      border-radius: 100vmax;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 46px;
+    text-align: center;
+
+    @media (min-width: 490px) {
+      font-size: 88px;
+    }
+  }
+}
