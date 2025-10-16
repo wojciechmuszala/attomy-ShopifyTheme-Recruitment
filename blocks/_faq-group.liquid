@@ -1,8 +1,16 @@
+{% assign current_block_id = block.id %}
+{% assign current_index = 0 %}
+
+{% for block_item in section.blocks %}
+  {% if block_item.id == current_block_id %}
+    {% assign current_index = forloop.index %}
+  {% endif %}
+{% endfor %}
+
 <div
-  class="faq__group-list"
+  class="faq__group-list collapse-close-rest{% if current_index == 1 %} active{% endif %}"
   data-type="faq-group"
   data-group-name="{{ block.settings.name }}"
-  data-collapse-close-rest
   {{ block.shopify_attributes }}
 >
   {% content_for 'blocks' %}

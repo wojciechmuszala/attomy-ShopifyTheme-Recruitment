@@ -12,14 +12,19 @@
     Arial, sans-serif;
   --typo-font-family-secondary: "Rubik", "Noto Sans", "Helvetica Neue", Arial,
     sans-serif;
+  --typo-font-size-xxxl: 3.2rem;
+  --typo-font-size-xxl: 2.8rem;
   --typo-font-size-xl: 2.4rem;
-  --typo-font-size-l: 2rem;
+  --typo-font-size-l: 2.2rem;
   --typo-font-size-m: 2rem;
   --typo-font-size-s: 1.6rem;
 
+  // Spacing
+  --space-section: 43px;
+
   // Utilities
   --bg-body: var(--color-grey-ultra-light);
-  --color-text: var(var(--color-navy-blue));
+  --color-text: (var(--color-navy-blue));
 
   --border-radius-big: 24px;
   --border-radius-small: 12px;
@@ -28,6 +33,8 @@
   --card-tight-padding: 16px;
 
   @media (min-width: 490px) {
+    --space-section: 26px;
+
     --card-padding: 36px;
     --card-tight-padding: 20px;
   }

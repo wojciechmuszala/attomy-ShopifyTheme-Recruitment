@@ -1,6 +1,6 @@
 class Collapse {
   constructor() {
-    this.collapseItems = document.querySelectorAll('[data-role="collapse"]');
+    this.collapseItems = document.querySelectorAll(".custom-collapse");
 
     this.events();
   }
@@ -37,14 +37,21 @@ class Collapse {
       }
     }
 
-    if (element.parentElement.hasAttribute("data-collapse-close-rest")) {
+    if (element.closest(".collapse-close-rest")) {
       this.closeAll(element);
     }
   }
 
   closeAll(currentElement) {
-    this.collapseItems.forEach((item) => {
-      item !== currentElement && item.removeAttribute("open");
+    const parentGroup = currentElement.closest(".collapse-close-rest");
+    if (!parentGroup) return;
+
+    const localCollapses = parentGroup.querySelectorAll(".custom-collapse");
+
+    localCollapses.forEach((item) => {
+      if (item !== currentElement && !currentElement.contains(item)) {
+        item.removeAttribute("open");
+      }
     });
   }
 }

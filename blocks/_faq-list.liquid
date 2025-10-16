@@ -1,17 +1,16 @@
-<div class="faq__group-item" data-role="collapse">
-  <button class="faq__group-toggle custom-card custom-card--tight" data-action="toggle">
-    {{ block.settings.name }}
-  </button>
-  <div class=" faq__list-wrapper collapse-content-container">
-    <ul class="faq__list collapse-content" {{ block.shopify_attributes }}>
-      {% content_for 'blocks' %}
-    </ul>
-  </div>
+<button class="faq__group-toggle custom-card custom-card--tight" data-action="toggle">
+  {{ block.settings.name }}
+</button>
+<div class=" faq__list-wrapper collapse-content-container">
+  <ul class="faq__list collapse-content collapse-close-rest" {{ block.shopify_attributes }}>
+    {% content_for 'blocks' %}
+  </ul>
 </div>
 
 {% schema %}
 {
   "name": "Question",
+  "class": "faq__group-item custom-collapse",
   "settings": [
     {
       "type": "text",

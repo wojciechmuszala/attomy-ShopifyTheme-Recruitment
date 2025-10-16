@@ -7,12 +7,32 @@
        faq_list
          faq_item
 {% endcomment %}
-
+<div class="faq__heading">
+  <{{ section.settings.heading_tag }} class="faq__heading-text">
+    {% if section.settings.heading_text != blank %}
+      {{ section.settings.heading_text }}
+    {% else %}
+      {% comment %} TODO: tlumaczenie {% endcomment %}
+      Najczęściej zadawane pytania
+    {% endif %}
+  </{{ section.settings.heading_tag }}>
+</div>
 <div class="faq__search">
-  <input class="faq__search-input" type="text">
+  {% comment %} TODO: tlumaczenia placeholdera {% endcomment %}
+  <input class="faq__search-input" type="text" placeholder="Szukaj odpowiedzi...">
+  {% render 'icon-custom-search' %}
 </div>
 <nav class="faq__nav" data-type="faq-nav"></nav>
-<div class="faq__content">
+<div
+  class="
+    faq__content
+    {% case section.settings.tiles_float %}
+      {% when 'flex' %} flex
+      {% when 'float' %} float
+      {% when 'absolute' %} absolute
+    {% endcase %}
+  "
+>
   {% content_for 'blocks' %}
 </div>
 
@@ -21,7 +41,38 @@
   "name": "FAQ",
   "class": "faq page-width",
   "tag": "section",
-  "settings": [],
+  "settings": [
+    {
+      "type": "text",
+      "label": "Heading",
+      "id": "heading_text"
+    },
+    {
+      "type": "radio",
+      "id": "heading_tag",
+      "label": "Heading tag",
+      "options": [
+        { "value": "h1", "label": "H1" },
+        { "value": "h2", "label": "H2" },
+        { "value": "h3", "label": "H3" },
+        { "value": "h4", "label": "H4" },
+        { "value": "h5", "label": "H5" },
+        { "value": "h6", "label": "H6" }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "radio",
+      "id": "tiles_float",
+      "label": "Should FAQ tiles in groups float?",
+      "options": [
+        { "value": "flex", "label": "Flex" },
+        { "value": "float", "label": "Float" },
+        { "value": "absolute", "label": "Absolute" }
+      ],
+      "default": "flex"
+    }
+  ],
   "blocks": [
     {
       "type": "_faq-group"

@@ -15,7 +15,7 @@
   }
 }
 
-[data-role="collapse"] {
+.custom-collapse {
   &[open] {
     > .collapse-content-container {
       grid-template-rows: 1fr;
@@ -25,6 +25,10 @@
       &::after {
         content: "-";
       }
+    }
+
+    .collapse-content {
+      overflow: hidden;
     }
   }
 
