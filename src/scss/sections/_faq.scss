@@ -2,16 +2,17 @@
 
 .faq {
   text-align: left;
+  padding: 65px 0;
+
+  @media (min-width: 490px) {
+    padding: 43px 0 26px;
+  }
 
   .found {
     > [data-action="toggle"] {
       color: var(--color-green);
     }
   }
-
-  // .found{
-  //   background-color: var(--color-green);
-  // }
 
   &__heading {
     margin-bottom: var(--space-section);
@@ -213,10 +214,6 @@
     padding: 0;
     position: relative;
     break-inside: avoid;
-
-    // &:has([open]) {
-    //   grid-row: span 2;
-    // }
 
     @media (min-width: 490px) {
       .faq__content.float & {

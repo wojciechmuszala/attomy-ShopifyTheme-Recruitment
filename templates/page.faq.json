@@ -9,6 +9,16 @@
  */
 {
   "sections": {
+    "page_hero_banner_fXjiA6": {
+      "type": "page-hero-banner",
+      "name": "Hero Banner",
+      "settings": {
+        "title": "Najczęściej zadawane pytania",
+        "subtitle": "Najlepsze x",
+        "image_desktop": "shopify://shop_images/faq-header.jpg",
+        "image_mobile": "shopify://shop_images/faq-header-mobile.jpg"
+      }
+    },
     "faq_xwV4tk": {
       "type": "faq",
       "blocks": {
@@ -23,7 +33,8 @@
               "type": "_faq-list",
               "name": "Questions list",
               "settings": {
-                "name": "Jak działa gwarancja?"
+                "name": "Jak działa gwarancja?",
+                "show-image": true
               },
               "blocks": {
                 "faq_item_7QWeiH": {
@@ -84,7 +95,8 @@
               "type": "_faq-list",
               "name": "Questions list",
               "settings": {
-                "name": "Serwis i naprawy"
+                "name": "Serwis i naprawy",
+                "show-image": true
               },
               "blocks": {
                 "faq_item_mwV338": {
@@ -155,7 +167,8 @@
               "type": "_faq-list",
               "name": "Questions list",
               "settings": {
-                "name": "Zwroty i reklamacje"
+                "name": "Zwroty i reklamacje",
+                "show-image": true
               },
               "blocks": {
                 "faq_item_pGgE9e": {
@@ -240,7 +253,8 @@
               "type": "_faq-list",
               "name": "Questions list",
               "settings": {
-                "name": "Informacje o produktach"
+                "name": "Informacje o produktach",
+                "show-image": true
               },
               "blocks": {
                 "faq_item_kGNzgG": {
@@ -308,7 +322,9 @@
               ]
             }
           },
-          "block_order": ["faq_list_neXpTr"]
+          "block_order": [
+            "faq_list_neXpTr"
+          ]
         },
         "faq_group_8mY7gD": {
           "type": "_faq-group",
@@ -321,7 +337,8 @@
               "type": "_faq-list",
               "name": "Questions list",
               "settings": {
-                "name": "Proces zakupowy"
+                "name": "Proces zakupowy",
+                "show-image": true
               },
               "blocks": {
                 "faq_item_Cbjicn": {
@@ -389,7 +406,9 @@
               ]
             }
           },
-          "block_order": ["faq_list_CaUCyX"]
+          "block_order": [
+            "faq_list_CaUCyX"
+          ]
         },
         "faq_group_KxYwpp": {
           "type": "_faq-group",
@@ -402,7 +421,8 @@
               "type": "_faq-list",
               "name": "Questions list",
               "settings": {
-                "name": "Informacje o dostawie"
+                "name": "Informacje o dostawie",
+                "show-image": true
               },
               "blocks": {
                 "faq_item_KpVQH6": {
@@ -470,7 +490,9 @@
               ]
             }
           },
-          "block_order": ["faq_list_q8wJKF"]
+          "block_order": [
+            "faq_list_q8wJKF"
+          ]
         }
       },
       "block_order": [
@@ -487,5 +509,8 @@
       }
     }
   },
-  "order": ["faq_xwV4tk"]
+  "order": [
+    "page_hero_banner_fXjiA6",
+    "faq_xwV4tk"
+  ]
 }

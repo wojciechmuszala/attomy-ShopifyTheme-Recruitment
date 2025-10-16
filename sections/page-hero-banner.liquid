@@ -1,23 +1,45 @@
 <div class="page-hero-banner__image-wrapper">
-  {%- if section.settings.image != blank -%}
-    {%- assign widths = '490,750,1080,1440,1920,2560,3840' -%}
-    {%- capture sizes -%}
-          (min-width: 2560px) 2560px,
-          (min-width: 1920px) 1920px,
-          (min-width: 1440px) 1440px,
-          (min-width: 1080px) 1080px,
-          (min-width: 750px) 750px,
-          100vw
-        {%- endcapture -%}
+  <picture>
+    {%- if section.settings.image_mobile != blank -%}
+      <source
+        media="(max-width: 750px)"
+        srcset="
+          {{ section.settings.image_mobile | image_url: width: 400 }} 400w,
+          {{ section.settings.image_mobile | image_url: width: 600 }} 600w,
+          {{ section.settings.image_mobile | image_url: width: 900 }} 900w
+        "
+        sizes="100vw"
+      >
+    {%- endif -%}
 
-    {{
-      section.settings.image
-      | image_url: width: 3840
-      | image_tag: loading: 'lazy', sizes: sizes, widths: widths, class: 'page-hero-banner__image'
-    }}
-  {%- else -%}
-    {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg page-hero-banner__image' }}
-  {%- endif -%}
+    {%- if section.settings.image_desktop != blank -%}
+      <source
+        media="(min-width: 751px)"
+        srcset="
+          {{ section.settings.image_desktop | image_url: width: 1080 }} 1080w,
+          {{ section.settings.image_desktop | image_url: width: 1440 }} 1440w,
+          {{ section.settings.image_desktop | image_url: width: 1920 }} 1920w,
+          {{ section.settings.image_desktop | image_url: width: 2560 }} 2560w,
+          {{ section.settings.image_desktop | image_url: width: 3840 }} 3840w
+        "
+        sizes="100vw"
+      >
+    {%- endif -%}
+
+    {%- assign fallback_image = section.settings.image_desktop | default: section.settings.image_mobile -%}
+    {%- if fallback_image != blank -%}
+      <img
+        src="{{ fallback_image | image_url: width: 1200 }}"
+        alt="{{ fallback_image.alt | escape }}"
+        class="page-hero-banner__image"
+        loading="lazy"
+        width="1200"
+        height="auto"
+      >
+    {%- else -%}
+      {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg page-hero-banner__image' }}
+    {%- endif -%}
+  </picture>
 </div>
 <div class="page-hero-banner__content">
   <p class="page-hero-banner__subtitle">{{ section.settings.subtitle }}</p>
@@ -44,8 +66,13 @@
     },
     {
       "type": "image_picker",
-      "id": "image",
-      "label": "Image"
+      "id": "image_desktop",
+      "label": "Image desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Image mobile"
     }
   ],
   "presets": [
