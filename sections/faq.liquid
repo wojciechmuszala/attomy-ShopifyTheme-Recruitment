@@ -17,10 +17,12 @@
     {% endif %}
   </{{ section.settings.heading_tag }}>
 </div>
-<div class="faq__search">
+<div class="faq__search" data-type="faq-search" data-not-found="Nie znaleziono żadnych wyników.">
   {% comment %} TODO: tlumaczenia placeholdera {% endcomment %}
-  <input class="faq__search-input" type="text" placeholder="Szukaj odpowiedzi...">
-  {% render 'icon-custom-search' %}
+  <div class="faq__search-input-wrapper">
+    <input class="faq__search-input" type="text" placeholder="Szukaj odpowiedzi...">
+    {% render 'icon-custom-search' %}
+  </div>
 </div>
 <nav class="faq__nav" data-type="faq-nav"></nav>
 <div
