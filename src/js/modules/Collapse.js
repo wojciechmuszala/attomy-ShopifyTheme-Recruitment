@@ -26,9 +26,9 @@ class Collapse {
     } else {
       element.setAttribute("open", "");
 
-      if (element.hasAttribute("data-scroll")) {
+      if (element.classList.contains("scroll-to-element")) {
         setTimeout(() => {
-          const targetPosition = element.offsetTop;
+          const targetPosition = element.offsetTop - 100;
           window.scrollTo({
             top: targetPosition,
             behavior: "smooth",

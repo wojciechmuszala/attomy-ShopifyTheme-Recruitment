@@ -4,8 +4,16 @@
   text-align: left;
   padding: 65px 0;
 
-  @media (min-width: 490px) {
+  a,
+  button {
+    color: var(--color-text);
+  }
+
+  @media (min-width: 750px) {
     padding: 43px 0 26px;
+  }
+  @media (min-width: 751px) and (max-width: 1300px) {
+    padding: 43px 20px 26px;
   }
 
   .found {
@@ -23,7 +31,7 @@
       margin: 0;
       color: var(--color-text);
 
-      @media (min-width: 490px) {
+      @media (min-width: 750px) {
         font-size: var(--typo-font-size-xxxl);
       }
     }
@@ -77,6 +85,7 @@
     }
 
     &-item {
+      flex-shrink: 0;
       padding: 12px 24px;
       background-color: var(--color-white);
       border: 1px solid var(--color-navy-blue);
@@ -104,7 +113,7 @@
         background-color: var(--color-green);
       }
 
-      @media (min-width: 490px) {
+      @media (min-width: 750px) {
         font-size: var(--typo-font-size-l);
       }
     }
@@ -116,7 +125,7 @@
     gap: 16px 0;
     margin: 0 -1.5rem;
 
-    @media (min-width: 490px) {
+    @media (min-width: 750px) {
       margin: 0;
     }
   }
@@ -141,7 +150,7 @@
         margin-bottom: -16px;
       }
 
-      @media (min-width: 490px) {
+      @media (min-width: 750px) {
         border-radius: var(--border-radius-big);
 
         &[open] {
@@ -159,7 +168,7 @@
       font-size: var(--typo-font-size-m);
       font-weight: 500;
 
-      @media (min-width: 490px) {
+      @media (min-width: 750px) {
         font-size: var(--typo-font-size-xl);
         border-radius: var(--border-radius-big);
         border-left: 1px solid var(--color-gray);
@@ -179,7 +188,7 @@
       width: 60px;
       height: 60px;
 
-      @media (min-width: 490px) {
+      @media (min-width: 750px) {
         width: 85px;
         height: 85px;
       }
@@ -194,7 +203,7 @@
       gap: 16px;
       margin: 24px 0;
 
-      @media (min-width: 490px) {
+      @media (min-width: 750px) {
         grid-template-columns: repeat(2, 1fr);
 
         .faq__content.float & {
@@ -213,10 +222,11 @@
   &__item {
     padding: 0;
     position: relative;
-    break-inside: avoid;
+    align-self: start;
 
-    @media (min-width: 490px) {
+    @media (min-width: 750px) {
       .faq__content.float & {
+        break-inside: avoid;
         margin-bottom: 16px;
 
         > .custom-collapse[open] {
@@ -239,7 +249,7 @@
       font-size: var(--typo-font-size-s);
       font-weight: 500;
 
-      @media (min-width: 490px) {
+      @media (min-width: 750px) {
         font-size: var(--typo-font-size-l);
       }
     }
