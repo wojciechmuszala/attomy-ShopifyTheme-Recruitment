@@ -336,8 +336,8 @@
       "title": "Page title"
     },
     "faq": {
-      "no_result": "No results.",
-      "search_answer": "Search answer..."
+      "no_result": "No matching questions found.",
+      "search_for_answers": "Search for answers..."
     }
   },
   "localization": {

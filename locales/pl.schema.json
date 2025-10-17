@@ -3321,7 +3321,7 @@
           "name": "Układ kafli",
           "options": {
             "grid": "Siatka",
-            "float": "Kafle pływające"
+            "float": "Pływające kafle"
           }
         }
       },

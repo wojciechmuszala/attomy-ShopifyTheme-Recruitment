@@ -9,7 +9,7 @@
   <div class="faq__search" data-type="faq-search" data-not-found="{{ 'sections.faq.no_result' | t }}">
     {% comment %} TODO: tlumaczenia placeholdera {% endcomment %}
     <div class="faq__search-input-wrapper">
-      <input class="faq__search-input" type="text" placeholder="Szukaj odpowiedzi...">
+      <input class="faq__search-input" type="text" placeholder="{{ 'sections.faq.search_for_answers' | t }}">
       {% render 'icon-custom-search' %}
     </div>
   </div>
@@ -40,7 +40,7 @@
       "default": "t:sections.faq.settings.heading_text"
     },
     {
-      "type": "radio",
+      "type": "select",
       "id": "heading_tag",
       "label": "t:sections.faq.settings.heading_tag",
       "options": [
@@ -57,10 +57,10 @@
     {
       "type": "radio",
       "id": "tiles_float",
-      "label": "t:sections.faq.settings.tiles_float",
+      "label": "t:sections.faq.settings.tiles_float.name",
       "options": [
-        { "value": "grid", "label": "Grid layout" },
-        { "value": "float", "label": "Floating tiles" }
+        { "value": "grid", "label": "t:sections.faq.settings.tiles_float.options.grid" },
+        { "value": "float", "label": "t:sections.faq.settings.tiles_float.options.float" }
       ],
       "default": "grid"
     }

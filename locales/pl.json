@@ -353,8 +353,8 @@
       "title": "Tytuł strony"
     },
     "faq": {
-      "no_result": "Nie znaleziono żadnych wyników.",
-      "search_answer": "Szukaj odpowiedzi..."
+      "no_result": "Nie znaleziono żadnych dopasowanych pytań.",
+      "search_for_answers": "Szukaj odpowiedzi..."
     }
   },
   "localization": {
