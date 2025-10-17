@@ -1,6 +1,11 @@
 class Collapse {
-  constructor() {
-    this.collapseItems = document.querySelectorAll(".custom-collapse");
+  constructor(container = document) {
+    this.container = container;
+    this.collapseItems = Array.from(
+      this.container.querySelectorAll(".custom-collapse")
+    );
+
+    this.listeners = [];
 
     this.events();
   }
@@ -9,11 +14,12 @@ class Collapse {
     if (this.collapseItems.length > 0) {
       this.collapseItems.forEach((item) => {
         const toggle = item.querySelector('[data-action="toggle"]');
+        if (!toggle) return;
 
-        toggle &&
-          toggle.addEventListener("click", (event) =>
-            this.collapseElement(event, item)
-          );
+        const listener = (event) => this.collapseElement(event, item);
+        toggle.addEventListener("click", listener);
+
+        this.listeners.push({ element: toggle, handler: listener });
       });
     }
   }
@@ -53,6 +59,15 @@ class Collapse {
         item.removeAttribute("open");
       }
     });
+  }
+
+  destroy() {
+    this.listeners.forEach(({ element, handler }) => {
+      element.removeEventListener("click", handler);
+    });
+    this.listeners = [];
+    this.collapseItems = [];
+    this.container = null;
   }
 }
 

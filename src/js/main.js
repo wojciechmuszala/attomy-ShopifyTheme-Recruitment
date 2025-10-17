@@ -1,16 +1,27 @@
 import Collapse from "./modules/Collapse";
 import Faq from "./modules/Faq";
 
-const initModules = () => {
-  new Collapse();
-  new Faq();
+let collapseInstance = null;
+let faqInstance = null;
+
+const initModules = (container = document) => {
+  if (collapseInstance) collapseInstance.destroy();
+  if (faqInstance) faqInstance.destroy();
+
+  collapseInstance = new Collapse(container);
+  faqInstance = new Faq(container);
 };
 
-initModules();
+document.addEventListener("DOMContentLoaded", () => {
+  initModules();
+});
 
 if (Shopify.designMode) {
-  document.addEventListener("shopify:section:load", initModules);
-  document.addEventListener("shopify:section:unload", initModules);
-  document.addEventListener("shopify:block:select", initModules);
-  document.addEventListener("shopify:block:deselect", initModules);
+  document.addEventListener("shopify:section:load", (event) => {
+    initModules(event.target);
+  });
+  document.addEventListener("shopify:section:unload", () => {
+    if (collapseInstance) collapseInstance.destroy();
+    if (faqInstance) faqInstance.destroy();
+  });
 }

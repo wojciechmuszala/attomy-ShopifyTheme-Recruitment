@@ -6,15 +6,16 @@ class Faq {
       '.faq [data-type="faq-group"]'
     );
     this.search = this.container.querySelector('.faq [data-type="faq-search"]');
-    this.searchInput = this.search.querySelector("input");
+    this.searchInput = this.search?.querySelector("input");
+
+    this.listeners = [];
 
     this.buildNav();
     this.events();
   }
 
   generateId(title, index = 0) {
-    let id = title.replace(/[^\w\s]/gi, "");
-    id = id.replace(/\s+/g, "-");
+    let id = title.replace(/[^\w\s]/gi, "").replace(/\s+/g, "-");
     if (index) id = `${id}-${index}`;
     return id.toLowerCase();
   }
@@ -23,18 +24,22 @@ class Faq {
     let timeout;
     return (...args) => {
       clearTimeout(timeout);
-      timeout = setTimeout(() => {
-        fn.apply(this, args);
-      }, delay);
+      timeout = setTimeout(() => fn.apply(this, args), delay);
     };
   }
 
   events() {
     if (this.faqNavEl) {
-      this.faqNavEl.addEventListener("click", (e) => {
+      this.navClickHandler = (e) => {
         const btn = e.target.closest("button[data-group-id]");
         if (!btn) return;
         this.setActiveGroup(btn.dataset.groupId);
+      };
+      this.faqNavEl.addEventListener("click", this.navClickHandler);
+      this.listeners.push({
+        element: this.faqNavEl,
+        handler: this.navClickHandler,
+        type: "click",
       });
     }
 
@@ -45,6 +50,11 @@ class Faq {
       }, 300);
 
       this.searchInput.addEventListener("input", this.handleSearchInput);
+      this.listeners.push({
+        element: this.searchInput,
+        handler: this.handleSearchInput,
+        type: "input",
+      });
     }
   }
 
@@ -91,7 +101,7 @@ class Faq {
       group.classList.remove("active");
       group
         .querySelectorAll(".custom-collapse")
-        .forEach((collapse) => collapse.removeAttribute("open"));
+        .forEach((c) => c.removeAttribute("open"));
     });
 
     const groupToShow = this.container.querySelector(
@@ -120,13 +130,13 @@ class Faq {
 
     if (!allGroups.length) return;
 
-    const prevMsg = this.search.querySelector(".faq__search-no-results");
+    const prevMsg = this.search?.querySelector(".faq__search-no-results");
     if (prevMsg) prevMsg.remove();
 
     allGroups.forEach((group) => {
       group
         .querySelectorAll(".custom-collapse")
-        .forEach((collapse) => collapse.classList.remove("found"));
+        .forEach((c) => c.classList.remove("found"));
     });
     navItems.forEach((item) => item.classList.remove("found"));
 
@@ -140,8 +150,7 @@ class Faq {
       let groupHasMatch = false;
 
       collapses.forEach((collapse) => {
-        const text = collapse.textContent.toLowerCase();
-        if (text.includes(search)) {
+        if (collapse.textContent.toLowerCase().includes(search)) {
           collapse.classList.add("found");
           groupHasMatch = true;
           foundAny = true;
@@ -156,12 +165,23 @@ class Faq {
       }
     });
 
-    if (!foundAny) {
+    if (!foundAny && this.search) {
       const msg = document.createElement("p");
       msg.className = "faq__search-no-results";
       msg.textContent = this.search.dataset.notFound;
       this.search.appendChild(msg);
     }
+  }
+
+  destroy() {
+    this.listeners.forEach(({ element, handler, type }) => {
+      element.removeEventListener(type, handler);
+    });
+    this.listeners = [];
+    this.faqGroupEls = [];
+    this.faqNavEl = null;
+    this.searchInput = null;
+    this.container = null;
   }
 }
 
