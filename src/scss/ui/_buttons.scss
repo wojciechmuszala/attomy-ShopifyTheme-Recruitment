@@ -1,0 +1,11 @@
+@use "../base/mixins";
+
+.btn {
+  &__pill {
+    @include mixins.btn-pill;
+
+    &--primary {
+      @include mixins.btn-pill-primary;
+    }
+  }
+}
