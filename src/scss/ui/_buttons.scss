@@ -7,5 +7,9 @@
     &--primary {
       @include mixins.btn-pill-primary;
     }
+
+    &--secondary {
+      @include mixins.btn-pill-secondary;
+    }
   }
 }

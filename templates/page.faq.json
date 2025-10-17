@@ -25,10 +25,10 @@
       "settings": {
         "title": "Masz pytania? Skontaktuj się",
         "heading_tag": "p",
-        "phone": "",
+        "phone": "632832833",
         "availability": "Pn-Pt od 8:00 do 16:00",
-        "content": "",
-        "variant": "primary"
+        "button_text": "Zgłoś reklamacje",
+        "button_style": "primary"
       }
     },
     "faq_xwV4tk": {
