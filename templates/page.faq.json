@@ -19,6 +19,18 @@
         "image_mobile": "shopify://shop_images/faq-header-mobile.jpg"
       }
     },
+    "page_contact_gg8Nai": {
+      "type": "page-contact",
+      "name": "Contact Card",
+      "settings": {
+        "title": "Masz pytania? Skontaktuj się",
+        "heading_tag": "p",
+        "phone": "",
+        "availability": "Pn-Pt od 8:00 do 16:00",
+        "content": "",
+        "variant": "primary"
+      }
+    },
     "faq_xwV4tk": {
       "type": "faq",
       "blocks": {
@@ -511,6 +523,7 @@
   },
   "order": [
     "page_hero_banner_fXjiA6",
+    "page_contact_gg8Nai",
     "faq_xwV4tk"
   ]
 }

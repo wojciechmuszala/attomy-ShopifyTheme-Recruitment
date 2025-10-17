@@ -1,0 +1,41 @@
+{% doc %}
+  Formats a phone number for display, preserving an international prefix (+XX) 
+  and grouping digits in sets of three for readability.
+
+  @param {string} phone - The phone number to format. If empty, falls back to the shop default phone (shop.phone).
+
+  @example
+  {% render 'format-phone', phone: '+48123321213' %}
+{% enddoc %}
+
+{% assign raw_phone = phone %}
+{% if raw_phone == blank %}
+  {% assign raw_phone = shop.phone %}
+{% endif %}
+
+{%- assign phone_number = raw_phone -%}
+{% if phone_number[0] == '+' %}
+  {% assign prefix = phone_number | slice: 0, 3 %}
+  {% assign number_body = phone_number | slice: 3 %}
+{% else %}
+  {% assign prefix = '' %}
+  {% assign number_body = phone_number %}
+{% endif %}
+
+{% assign number_body = number_body | remove: ' ' | remove: '-' | remove: '(' | remove: ')' %}
+
+{%- assign formatted_phone = prefix -%}
+{% assign i = 0 %}
+
+{% for j in (0..number_body.size) %}
+  {% assign part = number_body | slice: i, 3 %}
+  {% if part != blank %}
+    {% assign formatted_phone = formatted_phone | append: part %}
+    {% assign i = i | plus: 3 %}
+    {% if i < number_body.size %}
+      {% assign formatted_phone = formatted_phone | append: ' ' %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+
+{{ formatted_phone }}

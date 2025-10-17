@@ -1,0 +1,115 @@
+{% if section.settings.title != blank %}
+  <{{ section.settings.heading_tag }} class="page-contact__title">
+    {{ section.settings.title }}
+  </{{ section.settings.heading_tag }}>
+{% endif %}
+
+<div class="page-contact__data">
+  <div class="page-contact__info">
+    {% assign phone_number = section.settings.phone %}
+    {% if phone_number == blank %}
+      {% assign phone_number = shop.phone %}
+    {% endif %}
+
+    {% if phone_number != blank %}
+      <span class="page-contact__phone">
+        <span class="page-contact__phone-icon">
+          {% render 'icon-custom-phone' %}
+        </span>
+        <span class="page-contact__phone-number">
+          {%- render 'format-phone', phone: phone_number -%}
+        </span>
+      </span>
+    {% endif %}
+
+    {% if section.settings.availability != blank %}
+      <span class="page-contact__availability">{{ section.settings.availability }}</span>
+    {% endif %}
+  </div>
+
+  {% if section.settings.button_text != blank and phone_number %}
+    <a
+      href="tel:{%- render 'format-phone-link', phone: phone_number -%}"
+      class="
+        btn
+        btn__pill
+        btn__pill--
+        {%- case section.settings.button_style -%}
+        {%- when 'primary' -%} primary
+        {%- when 'secondary' -%} socondary
+        {% endcase %}
+      "
+    >
+      {{ section.settings.button_text }}
+    </a>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Contact section",
+  "tag": "section",
+  "class": "page-contact page-width",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "radio",
+      "id": "heading_tag",
+      "label": "Heading tag",
+      "options": [
+        { "value": "h1", "label": "H1" },
+        { "value": "h2", "label": "H2" },
+        { "value": "h3", "label": "H3" },
+        { "value": "h4", "label": "H4" },
+        { "value": "h5", "label": "H5" },
+        { "value": "h6", "label": "H6" },
+        { "value": "p", "label": "P" }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "text",
+      "id": "phone",
+      "label": "Phone number"
+    },
+    {
+      "type": "text",
+      "id": "availability",
+      "label": "Availability (hours)"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text"
+    },
+    {
+      "type": "radio",
+      "id": "button_style",
+      "label": "Button style",
+      "options": [
+        {
+          "value": "primary",
+          "label": "Primary"
+        },
+        {
+          "value": "secondary",
+          "label": "Secondary"
+        }
+      ],
+      "default": "primary"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Contact Card"
+    }
+  ],
+  "enabled_on": {
+    "templates": ["page"]
+  }
+}
+{% endschema %}
