@@ -31,499 +31,457 @@
         "button_style": "primary"
       }
     },
-    "faq_xwV4tk": {
+    "faq_aVqQTB": {
       "type": "faq",
       "blocks": {
-        "faq_group_qgYNQf": {
+        "faq_group_NCbKA3": {
           "type": "_faq-group",
-          "name": "FAQ group",
           "settings": {
             "name": "Gwarancja i serwis"
           },
           "blocks": {
-            "faq_list_8CYNMT": {
+            "faq_list_PAt9Qw": {
               "type": "_faq-list",
-              "name": "Questions list",
+              "name": "Lista pytań o gwarancję",
               "settings": {
-                "name": "Jak działa gwarancja?",
+                "name": "Gwarancja – podstawowe informacje",
                 "show-image": true
               },
               "blocks": {
-                "faq_item_7QWeiH": {
+                "faq_item_nFjXRW": {
                   "type": "_faq-item",
-                  "name": "Question",
+                  "name": "Jak działa gwarancja?",
                   "settings": {
-                    "faq-item-question": "Jak długo trwa gwarancja na produkty?",
-                    "faq-item-answer": "<p>Gwarancja na nasze produkty trwa 24 miesiące od daty zakupu. W przypadku problemów prosimy o kontakt z naszym serwisem.</p>"
+                    "faq-item-question": "Jak długo obowiązuje gwarancja na produkty?",
+                    "faq-item-answer": "<p>Standardowa gwarancja na nasze produkty wynosi 24 miesiące od daty zakupu.</p>"
                   },
                   "blocks": {}
                 },
-                "faq_item_ymkxD7": {
+                "faq_item_wVAUKG": {
                   "type": "_faq-item",
-                  "name": "Question",
+                  "name": "Jak zgłosić reklamację?",
                   "settings": {
-                    "faq-item-question": "Czy mogę przedłużyć gwarancję?",
-                    "faq-item-answer": "<p>Tak, oferujemy możliwość przedłużenia gwarancji o dodatkowe 12 miesięcy. Szczegóły znajdziesz na stronie produktu.</p>"
+                    "faq-item-question": "Jak mogę zgłosić reklamację produktu?",
+                    "faq-item-answer": "<p>Reklamacje można zgłaszać przez formularz na stronie lub kontaktując się telefonicznie z naszym działem obsługi klienta.</p>"
                   },
                   "blocks": {}
                 },
-                "faq_item_jfrxnj": {
+                "faq_item_3J7C3N": {
                   "type": "_faq-item",
-                  "name": "Question",
+                  "name": "Czy naprawa jest darmowa?",
                   "settings": {
-                    "faq-item-question": "Jak zgłosić reklamację?",
-                    "faq-item-answer": "<p>Reklamacje można zgłaszać poprzez formularz kontaktowy na naszej stronie lub bezpośrednio w sklepie stacjonarnym.</p>"
+                    "faq-item-question": "Czy naprawa w ramach gwarancji jest bezpłatna?",
+                    "faq-item-answer": "<p>Tak, wszystkie naprawy objęte gwarancją są realizowane bez dodatkowych opłat.</p>"
                   },
                   "blocks": {}
                 },
-                "faq_item_8VPE9T": {
+                "faq_item_XqgTz3": {
                   "type": "_faq-item",
-                  "name": "Question",
+                  "name": "Jak długo trwa serwis?",
                   "settings": {
-                    "faq-item-question": "Czy serwis jest płatny?",
-                    "faq-item-answer": "<p>Serwis gwarancyjny jest bezpłatny. Poza okresem gwarancji obowiązują opłaty zgodnie z cennikiem.</p>"
-                  },
-                  "blocks": {}
-                },
-                "faq_item_bBUPeh": {
-                  "type": "_faq-item",
-                  "name": "Question",
-                  "settings": {
-                    "faq-item-question": "Jakie dokumenty są potrzebne do reklamacji?",
-                    "faq-item-answer": "<p>Wymagany jest dowód zakupu oraz opis usterki. W przypadku zakupu online wystarczy potwierdzenie zamówienia.</p>"
+                    "faq-item-question": "Ile czasu trwa naprawa produktu w serwisie?",
+                    "faq-item-answer": "<p>Naprawa trwa zazwyczaj do 14 dni roboczych od momentu przyjęcia produktu do serwisu.</p>"
                   },
                   "blocks": {}
                 }
               },
               "block_order": [
-                "faq_item_7QWeiH",
-                "faq_item_ymkxD7",
-                "faq_item_jfrxnj",
-                "faq_item_8VPE9T",
-                "faq_item_bBUPeh"
+                "faq_item_nFjXRW",
+                "faq_item_wVAUKG",
+                "faq_item_3J7C3N",
+                "faq_item_XqgTz3"
               ]
             },
-            "faq_list_gtAhTc": {
+            "faq_list_94UUaw": {
               "type": "_faq-list",
-              "name": "Questions list",
+              "name": "Lista pytań o reklamacje",
               "settings": {
-                "name": "Serwis i naprawy",
+                "name": "Reklamacje – najczęstsze pytania",
                 "show-image": true
               },
               "blocks": {
-                "faq_item_mwV338": {
+                "faq_item_niPXAT": {
                   "type": "_faq-item",
-                  "name": "Question",
+                  "name": "Czy mogę przedłużyć gwarancję?",
                   "settings": {
-                    "faq-item-question": "Jak długo trwa naprawa produktu?",
-                    "faq-item-answer": "<p>Standardowy czas naprawy wynosi od 3 do 7 dni roboczych, w zależności od rodzaju usterki.</p>"
+                    "faq-item-question": "Czy istnieje możliwość przedłużenia gwarancji?",
+                    "faq-item-answer": "<p>Tak, oferujemy opcję przedłużenia gwarancji o dodatkowy rok. Szczegóły znajdziesz w zakładce 'Gwarancja'.</p>"
                   },
                   "blocks": {}
                 },
-                "faq_item_HeienK": {
+                "faq_item_LDNJDR": {
                   "type": "_faq-item",
-                  "name": "Question",
+                  "name": "Jak sprawdzić status reklamacji?",
                   "settings": {
-                    "faq-item-question": "Czy mogę otrzymać produkt zastępczy na czas naprawy?",
-                    "faq-item-answer": "<p>Tak, w przypadku dłuższych napraw oferujemy produkty zastępcze. Prosimy o kontakt z obsługą klienta.</p>"
+                    "faq-item-question": "Jak mogę sprawdzić status mojej reklamacji?",
+                    "faq-item-answer": "<p>Status reklamacji można sprawdzić logując się do panelu klienta lub kontaktując się z naszym działem obsługi.</p>"
                   },
                   "blocks": {}
                 },
-                "faq_item_DPwTQa": {
+                "faq_item_QBgTDR": {
                   "type": "_faq-item",
-                  "name": "Question",
+                  "name": "Czy muszę mieć paragon?",
                   "settings": {
-                    "faq-item-question": "Czy naprawy są objęte gwarancją?",
-                    "faq-item-answer": "<p>Wszystkie naprawy wykonane w naszym serwisie są objęte 6-miesięczną gwarancją.</p>"
+                    "faq-item-question": "Czy do reklamacji potrzebny jest paragon?",
+                    "faq-item-answer": "<p>Tak, do zgłoszenia reklamacji wymagany jest dowód zakupu – paragon lub faktura.</p>"
                   },
                   "blocks": {}
                 },
-                "faq_item_UpgBJF": {
+                "faq_item_rBGXh7": {
                   "type": "_faq-item",
-                  "name": "Question",
+                  "name": "Co obejmuje gwarancja?",
                   "settings": {
-                    "faq-item-question": "Jak sprawdzić status naprawy?",
-                    "faq-item-answer": "<p>Status naprawy można sprawdzić online, wpisując numer zgłoszenia na naszej stronie.</p>"
-                  },
-                  "blocks": {}
-                },
-                "faq_item_Eq9iNR": {
-                  "type": "_faq-item",
-                  "name": "Question",
-                  "settings": {
-                    "faq-item-question": "Czy naprawiacie produkty innych marek?",
-                    "faq-item-answer": "<p>Naprawiamy wyłącznie produkty zakupione w naszym sklepie.</p>"
-                  },
-                  "blocks": {}
-                },
-                "faq_item_JKwNJe": {
-                  "type": "_faq-item",
-                  "name": "Question",
-                  "settings": {
-                    "faq-item-question": "Jakie są koszty naprawy po gwarancji?",
-                    "faq-item-answer": "<p>Koszty naprawy po gwarancji są ustalane indywidualnie na podstawie wyceny serwisu.</p>"
+                    "faq-item-question": "Jakie usterki obejmuje gwarancja?",
+                    "faq-item-answer": "<p>Gwarancja obejmuje wady fabryczne oraz uszkodzenia powstałe w trakcie prawidłowego użytkowania produktu.</p>"
                   },
                   "blocks": {}
                 }
               },
               "block_order": [
-                "faq_item_mwV338",
-                "faq_item_HeienK",
-                "faq_item_DPwTQa",
-                "faq_item_UpgBJF",
-                "faq_item_Eq9iNR",
-                "faq_item_JKwNJe"
+                "faq_item_niPXAT",
+                "faq_item_LDNJDR",
+                "faq_item_QBgTDR",
+                "faq_item_rBGXh7"
               ]
             },
-            "faq_list_GVYG8t": {
+            "faq_list_HLeKL4": {
               "type": "_faq-list",
-              "name": "Questions list",
+              "name": "Lista pytań o serwis",
               "settings": {
-                "name": "Zwroty i reklamacje",
+                "name": "Serwis – pytania i odpowiedzi",
                 "show-image": true
               },
               "blocks": {
-                "faq_item_pGgE9e": {
+                "faq_item_H9VRUU": {
                   "type": "_faq-item",
-                  "name": "Question",
+                  "name": "Czy gwarancja obejmuje uszkodzenia mechaniczne?",
                   "settings": {
-                    "faq-item-question": "Jak mogę zwrócić produkt?",
-                    "faq-item-answer": "<p>Zwrotu można dokonać w ciągu 14 dni od otrzymania produktu, wypełniając formularz zwrotu na stronie.</p>"
+                    "faq-item-question": "Czy gwarancja obejmuje uszkodzenia mechaniczne?",
+                    "faq-item-answer": "<p>Nie, uszkodzenia mechaniczne powstałe z winy użytkownika nie są objęte gwarancją.</p>"
                   },
                   "blocks": {}
                 },
-                "faq_item_4kkWbY": {
+                "faq_item_Tpcder": {
                   "type": "_faq-item",
-                  "name": "Question",
+                  "name": "Jakie dokumenty są potrzebne do serwisu?",
                   "settings": {
-                    "faq-item-question": "Czy zwrot jest bezpłatny?",
-                    "faq-item-answer": "<p>Zwrot jest bezpłatny dla zamówień powyżej 200 zł. W innych przypadkach koszt zwrotu pokrywa klient.</p>"
+                    "faq-item-question": "Jakie dokumenty są wymagane przy oddaniu produktu do serwisu?",
+                    "faq-item-answer": "<p>Do serwisu należy dostarczyć dowód zakupu oraz opis usterki.</p>"
                   },
                   "blocks": {}
                 },
-                "faq_item_F7KLTz": {
+                "faq_item_8AT8cd": {
                   "type": "_faq-item",
-                  "name": "Question",
+                  "name": "Czy mogę wymienić produkt na nowy?",
                   "settings": {
-                    "faq-item-question": "Kiedy otrzymam zwrot pieniędzy?",
-                    "faq-item-answer": "<p>Zwrot środków następuje do 7 dni roboczych od otrzymania zwróconego produktu.</p>"
+                    "faq-item-question": "Czy mogę wymienić produkt na nowy w przypadku powtarzających się usterek?",
+                    "faq-item-answer": "<p>Tak, jeśli usterka powtarza się trzykrotnie, przysługuje wymiana produktu na nowy.</p>"
                   },
                   "blocks": {}
                 },
-                "faq_item_JTRtnL": {
+                "faq_item_6nQAJd": {
                   "type": "_faq-item",
-                  "name": "Question",
+                  "name": "Jak skontaktować się z serwisem?",
                   "settings": {
-                    "faq-item-question": "Czy mogę wymienić produkt?",
-                    "faq-item-answer": "<p>Tak, wymiana jest możliwa w ciągu 14 dni od zakupu. Prosimy o kontakt z obsługą klienta.</p>"
-                  },
-                  "blocks": {}
-                },
-                "faq_item_jthikK": {
-                  "type": "_faq-item",
-                  "name": "Question",
-                  "settings": {
-                    "faq-item-question": "Jakie produkty nie podlegają zwrotowi?",
-                    "faq-item-answer": "<p>Zwrotowi nie podlegają produkty personalizowane oraz używane zgodnie z regulaminem.</p>"
-                  },
-                  "blocks": {}
-                },
-                "faq_item_8fX6Xi": {
-                  "type": "_faq-item",
-                  "name": "Question",
-                  "settings": {
-                    "faq-item-question": "Jak zgłosić reklamację?",
-                    "faq-item-answer": "<p>Reklamacje można zgłaszać przez formularz na stronie lub telefonicznie.</p>"
+                    "faq-item-question": "Jak mogę skontaktować się z serwisem?",
+                    "faq-item-answer": "<p>Dane kontaktowe do serwisu znajdują się w zakładce 'Kontakt' na naszej stronie.</p>"
                   },
                   "blocks": {}
                 }
               },
               "block_order": [
-                "faq_item_pGgE9e",
-                "faq_item_4kkWbY",
-                "faq_item_F7KLTz",
-                "faq_item_JTRtnL",
-                "faq_item_jthikK",
-                "faq_item_8fX6Xi"
+                "faq_item_H9VRUU",
+                "faq_item_Tpcder",
+                "faq_item_8AT8cd",
+                "faq_item_6nQAJd"
+              ]
+            },
+            "faq-list": {
+              "type": "_faq-list",
+              "static": true,
+              "settings": {
+                "name": "Gwarancja i serwis – dodatkowe pytania",
+                "show-image": true
+              },
+              "blocks": {
+                "faq_item_ktEi9F": {
+                  "type": "_faq-item",
+                  "name": "Czy gwarancja obowiązuje za granicą?",
+                  "settings": {
+                    "faq-item-question": "Czy gwarancja obowiązuje poza granicami Polski?",
+                    "faq-item-answer": "<p>Gwarancja obowiązuje wyłącznie na terenie Polski.</p>"
+                  },
+                  "blocks": {}
+                },
+                "faq_item_TX6Kyy": {
+                  "type": "_faq-item",
+                  "name": "Jakie są warunki gwarancji?",
+                  "settings": {
+                    "faq-item-question": "Gdzie znajdę szczegółowe warunki gwarancji?",
+                    "faq-item-answer": "<p>Warunki gwarancji są opisane w karcie gwarancyjnej dołączonej do produktu oraz na naszej stronie internetowej.</p>"
+                  },
+                  "blocks": {}
+                },
+                "faq_item_8WPFAC": {
+                  "type": "_faq-item",
+                  "name": "Czy mogę naprawić produkt poza serwisem?",
+                  "settings": {
+                    "faq-item-question": "Czy mogę naprawić produkt poza autoryzowanym serwisem?",
+                    "faq-item-answer": "<p>Naprawa poza autoryzowanym serwisem skutkuje utratą gwarancji.</p>"
+                  },
+                  "blocks": {}
+                },
+                "faq_item_p6b6PU": {
+                  "type": "_faq-item",
+                  "name": "Jak długo trwa rozpatrzenie reklamacji?",
+                  "settings": {
+                    "faq-item-question": "Ile trwa rozpatrzenie reklamacji?",
+                    "faq-item-answer": "<p>Rozpatrzenie reklamacji trwa do 14 dni od daty otrzymania produktu.</p>"
+                  },
+                  "blocks": {}
+                },
+                "faq_item_RxjV6M": {
+                  "type": "_faq-item",
+                  "name": "Czy mogę śledzić naprawę?",
+                  "settings": {
+                    "faq-item-question": "Czy mogę śledzić status naprawy mojego produktu?",
+                    "faq-item-answer": "<p>Tak, status naprawy można sprawdzić po zalogowaniu się do panelu klienta.</p>"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "faq_item_ktEi9F",
+                "faq_item_TX6Kyy",
+                "faq_item_8WPFAC",
+                "faq_item_p6b6PU",
+                "faq_item_RxjV6M"
               ]
             }
           },
           "block_order": [
-            "faq_list_8CYNMT",
-            "faq_list_gtAhTc",
-            "faq_list_GVYG8t"
+            "faq_list_PAt9Qw",
+            "faq_list_94UUaw",
+            "faq_list_HLeKL4"
           ]
         },
-        "faq_group_CVRMmV": {
+        "faq_group_6jT7TJ": {
           "type": "_faq-group",
-          "name": "FAQ group",
           "settings": {
             "name": "Produkty"
           },
           "blocks": {
-            "faq_list_neXpTr": {
+            "faq_list_bhTL9T": {
               "type": "_faq-list",
-              "name": "Questions list",
+              "name": "Lista pytań o produkty",
               "settings": {
-                "name": "Informacje o produktach",
+                "name": "Produkty – najczęstsze pytania",
                 "show-image": true
               },
               "blocks": {
-                "faq_item_kGNzgG": {
+                "faq_item_qdBmMf": {
                   "type": "_faq-item",
-                  "name": "Question",
+                  "name": "Jakie produkty oferujecie?",
                   "settings": {
-                    "faq-item-question": "Czy produkty są ekologiczne?",
-                    "faq-item-answer": "<p>Tak, większość naszych produktów posiada certyfikaty ekologiczne i jest przyjazna dla środowiska.</p>"
+                    "faq-item-question": "Jakie produkty znajdują się w ofercie sklepu?",
+                    "faq-item-answer": "<p>W naszej ofercie znajdziesz elektronikę użytkową, akcesoria komputerowe oraz sprzęt AGD.</p>"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": ["faq_item_qdBmMf"]
+            },
+            "faq-list": {
+              "type": "_faq-list",
+              "static": true,
+              "settings": {
+                "name": "Produkty – dodatkowe pytania",
+                "show-image": true
+              },
+              "blocks": {
+                "faq_item_enzFKg": {
+                  "type": "_faq-item",
+                  "name": "Czy produkty są oryginalne?",
+                  "settings": {
+                    "faq-item-question": "Czy oferowane produkty są oryginalne?",
+                    "faq-item-answer": "<p>Tak, wszystkie produkty są oryginalne i pochodzą bezpośrednio od producentów.</p>"
                   },
                   "blocks": {}
                 },
-                "faq_item_3BHycT": {
+                "faq_item_rXUDbz": {
                   "type": "_faq-item",
-                  "name": "Question",
+                  "name": "Czy mogę zamówić produkt na prezent?",
                   "settings": {
-                    "faq-item-question": "Jakie są dostępne rozmiary?",
-                    "faq-item-answer": "<p>Rozmiary dostępne są w opisie każdego produktu. W razie wątpliwości prosimy o kontakt.</p>"
+                    "faq-item-question": "Czy mogę zamówić produkt jako prezent?",
+                    "faq-item-answer": "<p>Tak, oferujemy opcję pakowania na prezent oraz możliwość dołączenia dedykacji.</p>"
                   },
                   "blocks": {}
                 },
-                "faq_item_Ez6ymU": {
+                "faq_item_PhjbDe": {
                   "type": "_faq-item",
-                  "name": "Question",
+                  "name": "Czy produkty mają instrukcję po polsku?",
                   "settings": {
-                    "faq-item-question": "Czy produkty są objęte gwarancją?",
-                    "faq-item-answer": "<p>Tak, wszystkie produkty objęte są 24-miesięczną gwarancją producenta.</p>"
-                  },
-                  "blocks": {}
-                },
-                "faq_item_9MEnHK": {
-                  "type": "_faq-item",
-                  "name": "Question",
-                  "settings": {
-                    "faq-item-question": "Czy mogę zamówić produkt na prezent?",
-                    "faq-item-answer": "<p>Tak, oferujemy opcję pakowania na prezent podczas składania zamówienia.</p>"
-                  },
-                  "blocks": {}
-                },
-                "faq_item_pMfbVY": {
-                  "type": "_faq-item",
-                  "name": "Question",
-                  "settings": {
-                    "faq-item-question": "Jak dbać o produkty?",
-                    "faq-item-answer": "<p>Instrukcje dotyczące pielęgnacji znajdują się w opisie produktu oraz na stronie producenta.</p>"
-                  },
-                  "blocks": {}
-                },
-                "faq_item_NXGhNV": {
-                  "type": "_faq-item",
-                  "name": "Question",
-                  "settings": {
-                    "faq-item-question": "Czy produkty są dostępne w sklepach stacjonarnych?",
-                    "faq-item-answer": "<p>Wybrane produkty dostępne są również w naszych sklepach stacjonarnych. Sprawdź listę lokalizacji na stronie.</p>"
+                    "faq-item-question": "Czy produkty posiadają instrukcję obsługi w języku polskim?",
+                    "faq-item-answer": "<p>Tak, do każdego produktu dołączona jest instrukcja w języku polskim.</p>"
                   },
                   "blocks": {}
                 }
               },
               "block_order": [
-                "faq_item_kGNzgG",
-                "faq_item_3BHycT",
-                "faq_item_Ez6ymU",
-                "faq_item_9MEnHK",
-                "faq_item_pMfbVY",
-                "faq_item_NXGhNV"
+                "faq_item_enzFKg",
+                "faq_item_rXUDbz",
+                "faq_item_PhjbDe"
               ]
             }
           },
-          "block_order": [
-            "faq_list_neXpTr"
-          ]
+          "block_order": ["faq_list_bhTL9T"]
         },
-        "faq_group_8mY7gD": {
+        "faq_group_UhtnnT": {
           "type": "_faq-group",
-          "name": "FAQ group",
           "settings": {
             "name": "Zakupy"
           },
           "blocks": {
-            "faq_list_CaUCyX": {
+            "faq-list": {
               "type": "_faq-list",
-              "name": "Questions list",
+              "static": true,
               "settings": {
-                "name": "Proces zakupowy",
+                "name": "Zakupy – najczęstsze pytania",
                 "show-image": true
               },
               "blocks": {
-                "faq_item_Cbjicn": {
+                "faq_item_YPN6cB": {
                   "type": "_faq-item",
-                  "name": "Question",
+                  "name": "Jak złożyć zamówienie?",
                   "settings": {
-                    "faq-item-question": "Jak złożyć zamówienie?",
-                    "faq-item-answer": "<p>Zamówienie można złożyć online poprzez naszą stronę lub telefonicznie.</p>"
-                  },
-                  "blocks": {}
-                },
-                "faq_item_pRYMBz": {
-                  "type": "_faq-item",
-                  "name": "Question",
-                  "settings": {
-                    "faq-item-question": "Jakie są dostępne metody płatności?",
-                    "faq-item-answer": "<p>Akceptujemy płatności kartą, przelewem oraz za pobraniem.</p>"
-                  },
-                  "blocks": {}
-                },
-                "faq_item_wbbNad": {
-                  "type": "_faq-item",
-                  "name": "Question",
-                  "settings": {
-                    "faq-item-question": "Czy mogę zmienić adres dostawy po złożeniu zamówienia?",
-                    "faq-item-answer": "<p>Adres dostawy można zmienić do momentu wysyłki zamówienia. Prosimy o kontakt z obsługą klienta.</p>"
-                  },
-                  "blocks": {}
-                },
-                "faq_item_Qj4hCE": {
-                  "type": "_faq-item",
-                  "name": "Question",
-                  "settings": {
-                    "faq-item-question": "Czy mogę anulować zamówienie?",
-                    "faq-item-answer": "<p>Anulowanie zamówienia jest możliwe przed jego wysyłką. Skontaktuj się z nami jak najszybciej.</p>"
-                  },
-                  "blocks": {}
-                },
-                "faq_item_chbLUF": {
-                  "type": "_faq-item",
-                  "name": "Question",
-                  "settings": {
-                    "faq-item-question": "Czy otrzymam fakturę VAT?",
-                    "faq-item-answer": "<p>Tak, wystawiamy faktury VAT na życzenie klienta.</p>"
-                  },
-                  "blocks": {}
-                },
-                "faq_item_GcDKLk": {
-                  "type": "_faq-item",
-                  "name": "Question",
-                  "settings": {
-                    "faq-item-question": "Czy mogę skorzystać z kodu rabatowego?",
-                    "faq-item-answer": "<p>Kody rabatowe można wykorzystać podczas składania zamówienia w koszyku.</p>"
+                    "faq-item-question": "Jak złożyć zamówienie w sklepie?",
+                    "faq-item-answer": "<p>Zamówienie można złożyć poprzez dodanie produktów do koszyka i wypełnienie formularza zamówienia na stronie.</p>"
                   },
                   "blocks": {}
                 }
               },
-              "block_order": [
-                "faq_item_Cbjicn",
-                "faq_item_pRYMBz",
-                "faq_item_wbbNad",
-                "faq_item_Qj4hCE",
-                "faq_item_chbLUF",
-                "faq_item_GcDKLk"
-              ]
+              "block_order": ["faq_item_YPN6cB"]
             }
           },
-          "block_order": [
-            "faq_list_CaUCyX"
-          ]
+          "block_order": []
         },
-        "faq_group_KxYwpp": {
+        "faq_group_bmP4gL": {
           "type": "_faq-group",
-          "name": "FAQ group",
           "settings": {
             "name": "Dostawa"
           },
           "blocks": {
-            "faq_list_q8wJKF": {
+            "faq-list": {
               "type": "_faq-list",
-              "name": "Questions list",
+              "static": true,
               "settings": {
-                "name": "Informacje o dostawie",
+                "name": "Dostawa – najczęstsze pytania",
                 "show-image": true
               },
               "blocks": {
-                "faq_item_KpVQH6": {
+                "faq_item_delivery1": {
                   "type": "_faq-item",
-                  "name": "Question",
+                  "name": "Jakie są opcje dostawy?",
                   "settings": {
-                    "faq-item-question": "Jakie są opcje dostawy?",
-                    "faq-item-answer": "<p>Oferujemy dostawę kurierem, do paczkomatu oraz odbiór osobisty w sklepie.</p>"
+                    "faq-item-question": "Jakie są dostępne opcje dostawy?",
+                    "faq-item-answer": "<p>Oferujemy dostawę kurierem, do paczkomatów oraz odbiór osobisty w naszym punkcie.</p>"
                   },
                   "blocks": {}
                 },
-                "faq_item_JXwMaE": {
+                "faq_item_delivery2": {
                   "type": "_faq-item",
-                  "name": "Question",
+                  "name": "Ile kosztuje dostawa?",
                   "settings": {
-                    "faq-item-question": "Ile kosztuje dostawa?",
-                    "faq-item-answer": "<p>Koszt dostawy zależy od wybranej opcji i wartości zamówienia. Szczegóły znajdziesz w cenniku na stronie.</p>"
+                    "faq-item-question": "Ile kosztuje dostawa zamówienia?",
+                    "faq-item-answer": "<p>Koszt dostawy zależy od wybranej opcji i jest widoczny podczas składania zamówienia.</p>"
                   },
                   "blocks": {}
                 },
-                "faq_item_WUgx4e": {
+                "faq_item_delivery3": {
                   "type": "_faq-item",
-                  "name": "Question",
+                  "name": "Jaki jest czas realizacji dostawy?",
                   "settings": {
-                    "faq-item-question": "Jak długo trwa dostawa?",
-                    "faq-item-answer": "<p>Standardowy czas dostawy to 1-3 dni robocze.</p>"
-                  },
-                  "blocks": {}
-                },
-                "faq_item_ghnyCw": {
-                  "type": "_faq-item",
-                  "name": "Question",
-                  "settings": {
-                    "faq-item-question": "Czy mogę śledzić przesyłkę?",
-                    "faq-item-answer": "<p>Tak, po wysyłce otrzymasz numer śledzenia przesyłki.</p>"
-                  },
-                  "blocks": {}
-                },
-                "faq_item_n4rXHM": {
-                  "type": "_faq-item",
-                  "name": "Question",
-                  "settings": {
-                    "faq-item-question": "Czy dostawa jest możliwa za granicę?",
-                    "faq-item-answer": "<p>Tak, realizujemy dostawy międzynarodowe. Koszty i czas dostawy zależą od kraju docelowego.</p>"
-                  },
-                  "blocks": {}
-                },
-                "faq_item_WDXPMm": {
-                  "type": "_faq-item",
-                  "name": "Question",
-                  "settings": {
-                    "faq-item-question": "Co zrobić, jeśli przesyłka nie dotarła?",
-                    "faq-item-answer": "<p>W przypadku problemów z dostawą prosimy o kontakt z naszym działem obsługi klienta.</p>"
+                    "faq-item-question": "Jaki jest przewidywany czas dostawy?",
+                    "faq-item-answer": "<p>Standardowy czas dostawy wynosi 1-3 dni robocze od momentu wysyłki.</p>"
                   },
                   "blocks": {}
                 }
               },
               "block_order": [
-                "faq_item_KpVQH6",
-                "faq_item_JXwMaE",
-                "faq_item_WUgx4e",
-                "faq_item_ghnyCw",
-                "faq_item_n4rXHM",
-                "faq_item_WDXPMm"
+                "faq_item_delivery1",
+                "faq_item_delivery2",
+                "faq_item_delivery3"
               ]
             }
           },
-          "block_order": [
-            "faq_list_q8wJKF"
-          ]
+          "block_order": []
+        },
+        "faq_group_zCdmdX": {
+          "type": "_faq-group",
+          "settings": {
+            "name": "Zwroty"
+          },
+          "blocks": {
+            "faq-list": {
+              "type": "_faq-list",
+              "static": true,
+              "settings": {
+                "name": "Zwroty – najczęstsze pytania",
+                "show-image": true
+              },
+              "blocks": {
+                "faq_item_return1": {
+                  "type": "_faq-item",
+                  "name": "Jak zwrócić produkt?",
+                  "settings": {
+                    "faq-item-question": "Jak mogę zwrócić zakupiony produkt?",
+                    "faq-item-answer": "<p>Produkt można zwrócić w ciągu 14 dni od otrzymania przesyłki, wypełniając formularz zwrotu dostępny na stronie.</p>"
+                  },
+                  "blocks": {}
+                },
+                "faq_item_return2": {
+                  "type": "_faq-item",
+                  "name": "Czy zwrot jest płatny?",
+                  "settings": {
+                    "faq-item-question": "Czy muszę zapłacić za zwrot produktu?",
+                    "faq-item-answer": "<p>Koszt zwrotu ponosi klient, chyba że produkt jest wadliwy lub niezgodny z zamówieniem.</p>"
+                  },
+                  "blocks": {}
+                },
+                "faq_item_return3": {
+                  "type": "_faq-item",
+                  "name": "Kiedy otrzymam zwrot pieniędzy?",
+                  "settings": {
+                    "faq-item-question": "W jakim terminie otrzymam zwrot pieniędzy za zwrócony produkt?",
+                    "faq-item-answer": "<p>Zwrot środków następuje do 14 dni od momentu otrzymania zwróconego produktu.</p>"
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "faq_item_return1",
+                "faq_item_return2",
+                "faq_item_return3"
+              ]
+            }
+          },
+          "block_order": []
         }
       },
       "block_order": [
-        "faq_group_qgYNQf",
-        "faq_group_CVRMmV",
-        "faq_group_8mY7gD",
-        "faq_group_KxYwpp"
+        "faq_group_NCbKA3",
+        "faq_group_6jT7TJ",
+        "faq_group_UhtnnT",
+        "faq_group_bmP4gL",
+        "faq_group_zCdmdX"
       ],
-      "name": "FAQ",
+      "name": "FAQ – najczęściej zadawane pytania",
       "settings": {
         "heading_text": "Najczęściej zadawane pytania",
         "heading_tag": "h2",
-        "tiles_float": "flex"
+        "tiles_float": "grid"
       }
     }
   },
-  "order": [
-    "page_hero_banner_fXjiA6",
-    "page_contact_gg8Nai",
-    "faq_xwV4tk"
-  ]
+  "order": ["page_hero_banner_fXjiA6", "page_contact_gg8Nai", "faq_aVqQTB"]
 }
