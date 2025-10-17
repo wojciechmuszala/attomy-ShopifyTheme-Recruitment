@@ -17,6 +17,8 @@
 }
 
 @mixin btn-pill-primary {
+  @include btn-pill;
+
   background-color: var(--color-btn-primary-bg);
   border: 1px solid var(--color-btn-primary-border);
   color: var(--color-btn-primary-text);
