@@ -334,6 +334,10 @@
     },
     "page": {
       "title": "Page title"
+    },
+    "faq": {
+      "no_result": "No results.",
+      "search_answer": "Search answer..."
     }
   },
   "localization": {

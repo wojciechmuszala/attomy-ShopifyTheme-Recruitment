@@ -3311,6 +3311,55 @@
       "presets": {
         "page_hero_banner": "Page Hero Banner"
       }
+    },
+    "faq": {
+      "name": "FAQ",
+      "settings": {
+        "heading_text": "Section heading",
+        "heading_tag": "Heading tag",
+        "tiles_float": {
+          "name": "Tile layout",
+          "options": {
+            "grid": "Grid layout",
+            "float": "Floating tiles"
+          }
+        }
+      },
+      "blocks": {
+        "faq_group": {
+          "name": "FAQ Group",
+          "settings": {
+            "name": "Group name"
+          },
+          "presets": {
+            "faq_group": "FAQ Group"
+          }
+        },
+        "faq_list": {
+          "name": "Questions list",
+          "settings": {
+            "name": "List name",
+            "show-image": "Show image",
+            "image": "Image"
+          },
+          "presets": {
+            "faq_list": "Questions list"
+          }
+        },
+        "faq_item": {
+          "name": "Question",
+          "settings": {
+            "faq-item-question": "Question",
+            "faq-item-answer": "Answer"
+          },
+          "presets": {
+            "faq_item": "Question"
+          }
+        }
+      },
+      "presets": {
+        "faq_section": "FAQ section"
+      }
     }
   }
 }

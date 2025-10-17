@@ -23,30 +23,32 @@
 </button>
 <div class=" faq__list-wrapper collapse-content-container">
   <ul class="faq__list collapse-content collapse-close-rest" {{ block.shopify_attributes }}>
+    {% content_for 'block', type: '_faq-item', id: 'faq-item' %}
     {% content_for 'blocks' %}
   </ul>
 </div>
 
 {% schema %}
 {
-  "name": "Question",
+  "name": "t:sections.faq.blocks.faq_list.name",
   "class": "faq__group-item custom-collapse scroll-to-element",
   "settings": [
     {
       "type": "text",
-      "label": "List parent name",
-      "id": "name"
+      "label": "t:sections.faq.blocks.faq_list.settings.name",
+      "id": "name",
+      "default": "t:sections.faq.blocks.faq_list.settings.name"
     },
     {
       "type": "checkbox",
       "id": "show-image",
-      "label": "Show image",
+      "label": "t:sections.faq.blocks.faq_list.settings.show-image",
       "default": true
     },
     {
       "type": "image_picker",
       "id": "image",
-      "label": "Image"
+      "label": "t:sections.faq.blocks.faq_list.settings.image"
     }
   ],
   "blocks": [
@@ -56,7 +58,7 @@
   ],
   "presets": [
     {
-      "name": "Questions list"
+      "name": "t:sections.faq.blocks.faq_list.presets.faq_list"
     }
   ]
 }

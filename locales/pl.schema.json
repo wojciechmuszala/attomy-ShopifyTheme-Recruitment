@@ -3311,6 +3311,55 @@
       "presets": {
         "page_hero_banner": "Baner strony"
       }
+    },
+    "faq": {
+      "name": "FAQ",
+      "settings": {
+        "heading_text": "Nagłówek sekcji",
+        "heading_tag": "Znacznik nagłówka",
+        "tiles_float": {
+          "name": "Układ kafli",
+          "options": {
+            "grid": "Siatka",
+            "float": "Kafle pływające"
+          }
+        }
+      },
+      "blocks": {
+        "faq_group": {
+          "name": "Grupa FAQ",
+          "settings": {
+            "name": "Nazwa grupy"
+          },
+          "presets": {
+            "faq_group": "Grupa FAQ"
+          }
+        },
+        "faq_list": {
+          "name": "Lista pytań",
+          "settings": {
+            "name": "Nazwa listy",
+            "show-image": "Pokaż obraz",
+            "image": "Obraz"
+          },
+          "presets": {
+            "faq_list": "Lista pytań"
+          }
+        },
+        "faq_item": {
+          "name": "Pytanie",
+          "settings": {
+            "faq-item-question": "Pytanie",
+            "faq-item-answer": "Odpowiedź"
+          },
+          "presets": {
+            "faq_item": "Pytanie"
+          }
+        }
+      },
+      "presets": {
+        "faq_section": "Sekcja FAQ"
+      }
     }
   }
 }

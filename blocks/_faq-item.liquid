@@ -16,24 +16,26 @@
 
 {% schema %}
 {
-  "name": "Question",
+  "name": "t:sections.faq.blocks.faq_item.name",
   "tag": "li",
   "class": "faq__item custom-card collapse-content",
   "settings": [
     {
       "type": "text",
-      "label": "Question",
-      "id": "faq-item-question"
+      "label": "t:sections.faq.blocks.faq_item.settings.faq-item-question",
+      "id": "faq-item-question",
+      "default": "t:sections.faq.blocks.faq_item.settings.faq-item-question"
     },
     {
       "type": "richtext",
-      "label": "Answer",
-      "id": "faq-item-answer"
+      "label": "t:sections.faq.blocks.faq_item.settings.faq-item-answer",
+      "id": "faq-item-answer",
+      "default": "t:sections.faq.blocks.faq_item.settings.faq-item-answer"
     }
   ],
   "presets": [
     {
-      "name": "Question"
+      "name": "t:sections.faq.blocks.faq_item.presets.faq_item"
     }
   ]
 }

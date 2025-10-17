@@ -1,15 +1,12 @@
 <div class="faq__wrapper page-width">
   <div class="faq__heading">
-    <{{ section.settings.heading_tag }} class="faq__heading-text">
-      {% if section.settings.heading_text != blank %}
+    {% if section.settings.heading_text != blank %}
+      <{{ section.settings.heading_tag }} class="faq__heading-text">
         {{ section.settings.heading_text }}
-      {% else %}
-        {% comment %} TODO: tlumaczenie {% endcomment %}
-        Najczęściej zadawane pytania
-      {% endif %}
-    </{{ section.settings.heading_tag }}>
+      </{{ section.settings.heading_tag }}>
+    {% endif %}
   </div>
-  <div class="faq__search" data-type="faq-search" data-not-found="Nie znaleziono żadnych wyników.">
+  <div class="faq__search" data-type="faq-search" data-not-found="{{ 'sections.faq.no_result' | t }}">
     {% comment %} TODO: tlumaczenia placeholdera {% endcomment %}
     <div class="faq__search-input-wrapper">
       <input class="faq__search-input" type="text" placeholder="Szukaj odpowiedzi...">
@@ -21,9 +18,8 @@
     class="
       faq__content
       {% case section.settings.tiles_float %}
-        {% when 'flex' %} flex
+        {% when 'grid' %} grid
         {% when 'float' %} float
-        {% when 'absolute' %} absolute
       {% endcase %}
     "
   >
@@ -33,19 +29,20 @@
 
 {% schema %}
 {
-  "name": "FAQ",
+  "name": "t:sections.faq.name",
   "class": "faq",
   "tag": "section",
   "settings": [
     {
       "type": "text",
-      "label": "Heading",
-      "id": "heading_text"
+      "id": "heading_text",
+      "label": "t:sections.faq.settings.heading_text",
+      "default": "t:sections.faq.settings.heading_text"
     },
     {
       "type": "radio",
       "id": "heading_tag",
-      "label": "Heading tag",
+      "label": "t:sections.faq.settings.heading_tag",
       "options": [
         { "value": "h1", "label": "H1" },
         { "value": "h2", "label": "H2" },
@@ -60,13 +57,12 @@
     {
       "type": "radio",
       "id": "tiles_float",
-      "label": "Should FAQ tiles in groups float?",
+      "label": "t:sections.faq.settings.tiles_float",
       "options": [
-        { "value": "flex", "label": "Flex" },
-        { "value": "float", "label": "Float" },
-        { "value": "absolute", "label": "Absolute" }
+        { "value": "grid", "label": "Grid layout" },
+        { "value": "float", "label": "Floating tiles" }
       ],
-      "default": "flex"
+      "default": "grid"
     }
   ],
   "blocks": [
@@ -76,8 +72,12 @@
   ],
   "presets": [
     {
-      "name": "FAQ",
-      "blocks": []
+      "name": "t:sections.faq.presets.faq_section",
+      "blocks": [
+        {
+          "type": "_faq-group"
+        }
+      ]
     }
   ],
   "enabled_on": {
