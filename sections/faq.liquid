@@ -1,47 +1,40 @@
-{% comment %}
-  IDEA: Podział na bloki, nav budowana w JS oparta na kategoriach
-   faq_search
-   NAV (JS na podstawie 'faq_category')
-   faq
-     faq_group
-       faq_list
-         faq_item
-{% endcomment %}
-<div class="faq__heading">
-  <{{ section.settings.heading_tag }} class="faq__heading-text">
-    {% if section.settings.heading_text != blank %}
-      {{ section.settings.heading_text }}
-    {% else %}
-      {% comment %} TODO: tlumaczenie {% endcomment %}
-      Najczęściej zadawane pytania
-    {% endif %}
-  </{{ section.settings.heading_tag }}>
-</div>
-<div class="faq__search" data-type="faq-search" data-not-found="Nie znaleziono żadnych wyników.">
-  {% comment %} TODO: tlumaczenia placeholdera {% endcomment %}
-  <div class="faq__search-input-wrapper">
-    <input class="faq__search-input" type="text" placeholder="Szukaj odpowiedzi...">
-    {% render 'icon-custom-search' %}
+<div class="faq__wrapper page-width">
+  <div class="faq__heading">
+    <{{ section.settings.heading_tag }} class="faq__heading-text">
+      {% if section.settings.heading_text != blank %}
+        {{ section.settings.heading_text }}
+      {% else %}
+        {% comment %} TODO: tlumaczenie {% endcomment %}
+        Najczęściej zadawane pytania
+      {% endif %}
+    </{{ section.settings.heading_tag }}>
   </div>
-</div>
-<nav class="faq__nav" data-type="faq-nav"></nav>
-<div
-  class="
-    faq__content
-    {% case section.settings.tiles_float %}
-      {% when 'flex' %} flex
-      {% when 'float' %} float
-      {% when 'absolute' %} absolute
-    {% endcase %}
-  "
->
-  {% content_for 'blocks' %}
+  <div class="faq__search" data-type="faq-search" data-not-found="Nie znaleziono żadnych wyników.">
+    {% comment %} TODO: tlumaczenia placeholdera {% endcomment %}
+    <div class="faq__search-input-wrapper">
+      <input class="faq__search-input" type="text" placeholder="Szukaj odpowiedzi...">
+      {% render 'icon-custom-search' %}
+    </div>
+  </div>
+  <nav class="faq__nav" data-type="faq-nav"></nav>
+  <div
+    class="
+      faq__content
+      {% case section.settings.tiles_float %}
+        {% when 'flex' %} flex
+        {% when 'float' %} float
+        {% when 'absolute' %} absolute
+      {% endcase %}
+    "
+  >
+    {% content_for 'blocks' %}
+  </div>
 </div>
 
 {% schema %}
 {
   "name": "FAQ",
-  "class": "faq page-width",
+  "class": "faq",
   "tag": "section",
   "settings": [
     {
@@ -59,7 +52,8 @@
         { "value": "h3", "label": "H3" },
         { "value": "h4", "label": "H4" },
         { "value": "h5", "label": "H5" },
-        { "value": "h6", "label": "H6" }
+        { "value": "h6", "label": "H6" },
+        { "value": "p", "label": "P" }
       ],
       "default": "h2"
     },
