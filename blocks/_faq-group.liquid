@@ -7,7 +7,7 @@
   {% endif %}
 {% endfor %}
 
-<div
+<ul
   class="faq__group-list collapse-close-rest{% if current_index == 1 %} active{% endif %}"
   data-type="faq-group"
   data-group-name="{{ block.settings.name }}"
@@ -15,7 +15,7 @@
 >
   {% content_for 'block', type: '_faq-list', id: 'faq-list' %}
   {% content_for 'blocks' %}
-</div>
+</ul>
 
 {% schema %}
 {
