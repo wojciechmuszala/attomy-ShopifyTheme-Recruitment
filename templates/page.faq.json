@@ -9,9 +9,9 @@
  */
 {
   "sections": {
-    "page_hero_banner_fXjiA6": {
+    "page_hero_banner_UWhHKK": {
       "type": "page-hero-banner",
-      "name": "Hero Banner",
+      "name": "t:sections.page_hero_banner.presets.page_hero_banner",
       "settings": {
         "title": "Najczęściej zadawane pytania",
         "subtitle": "Najlepsze x",
@@ -19,15 +19,15 @@
         "image_mobile": "shopify://shop_images/faq-header-mobile.jpg"
       }
     },
-    "page_contact_gg8Nai": {
+    "page_contact_Y9QAeN": {
       "type": "page-contact",
-      "name": "Contact Card",
+      "name": "t:sections.page_contact.presets.contact_card",
       "settings": {
         "title": "Masz pytania? Skontaktuj się",
-        "heading_tag": "p",
+        "heading_tag": "h2",
         "phone": "632832833",
         "availability": "Pn-Pt od 8:00 do 16:00",
-        "button_text": "Zgłoś reklamacje",
+        "button_text": "Zgłoś reklamację",
         "button_style": "primary"
       }
     },
@@ -573,8 +573,8 @@
     }
   },
   "order": [
-    "page_hero_banner_fXjiA6",
-    "page_contact_gg8Nai",
+    "page_hero_banner_UWhHKK",
+    "page_contact_Y9QAeN",
     "faq_aVqQTB"
   ]
 }
