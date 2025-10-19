@@ -1,0 +1,27 @@
+{% doc %}
+  Prepares a phone number for use in an href="tel:" link.
+  Preserves an international prefix (+XX) and removes spaces, dashes, and parentheses.
+
+  @param {string} phone - The phone number to format. If empty, falls back to shop.phone.
+
+  @example
+  <a href="tel:{% render 'format-phone-link', phone: '+48123321213' %}">
+    Call us
+  </a>
+{% enddoc %}
+
+{% assign raw_phone = phone | default: shop.phone -%}
+
+{%- assign phone_number = raw_phone -%}
+{% if phone_number[0] == '+' %}
+  {% assign prefix = '+' -%}
+  {% assign number_body = phone_number | slice: 1 -%}
+{% else %}
+  {% assign prefix = '' -%}
+  {% assign number_body = phone_number -%}
+{% endif %}
+
+{% assign number_body = number_body | remove: ' ' | remove: '-' | remove: '(' | remove: ')' -%}
+
+{{ prefix -}}
+{{- number_body -}}

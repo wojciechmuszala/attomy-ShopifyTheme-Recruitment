@@ -1,0 +1,110 @@
+{% if section.settings.title != blank %}
+  <{{ section.settings.heading_tag }} class="page-contact__title">
+    {{ section.settings.title }}
+  </{{ section.settings.heading_tag }}>
+{% endif %}
+
+<div class="page-contact__data">
+  <div class="page-contact__info">
+    {% assign phone_number = section.settings.phone %}
+    {% if phone_number == blank %}
+      {% assign phone_number = shop.phone %}
+    {% endif %}
+
+    {% if phone_number != blank %}
+      <span class="page-contact__phone">
+        <span class="page-contact__phone-icon">
+          {% render 'icon-custom-phone' %}
+        </span>
+        <span class="page-contact__phone-number">
+          {%- render 'format-phone', phone: phone_number -%}
+        </span>
+      </span>
+    {% endif %}
+
+    {% if section.settings.availability != blank %}
+      <span class="page-contact__availability">{{ section.settings.availability }}</span>
+    {% endif %}
+  </div>
+
+  {% if section.settings.button_text != blank and phone_number %}
+    <a
+      href="tel:{%- render 'format-phone-link', phone: phone_number -%}"
+      class="
+        btn
+        btn__pill
+        btn__pill--
+        {%- case section.settings.button_style -%}
+        {%- when 'primary' -%} primary
+        {%- when 'secondary' -%} secondary
+        {% endcase %}
+      "
+    >
+      {{ section.settings.button_text }}
+    </a>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.page_contact.name",
+  "tag": "section",
+  "class": "page-contact page-width",
+  "limit": 1,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:sections.page_contact.settings.title"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "t:sections.page_contact.settings.heading_tag",
+      "options": [
+        { "value": "h1", "label": "H1" },
+        { "value": "h2", "label": "H2" },
+        { "value": "h3", "label": "H3" },
+        { "value": "h4", "label": "H4" },
+        { "value": "h5", "label": "H5" },
+        { "value": "h6", "label": "H6" },
+        { "value": "p", "label": "P" }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "text",
+      "id": "phone",
+      "label": "t:sections.page_contact.settings.phone"
+    },
+    {
+      "type": "text",
+      "id": "availability",
+      "label": "t:sections.page_contact.settings.availability"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "t:sections.page_contact.settings.button_text"
+    },
+    {
+      "type": "radio",
+      "id": "button_style",
+      "label": "t:sections.page_contact.settings.button_style.name",
+      "options": [
+        { "value": "primary", "label": "t:sections.page_contact.settings.button_style.options.primary" },
+        { "value": "secondary", "label": "t:sections.page_contact.settings.button_style.options.secondary" }
+      ],
+      "default": "primary"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.page_contact.presets.contact_card"
+    }
+  ],
+  "enabled_on": {
+    "templates": ["page"]
+  }
+}
+{% endschema %}

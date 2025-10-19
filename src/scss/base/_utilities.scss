@@ -1,0 +1,60 @@
+.custom-card {
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-big);
+  border: 1px solid var(--color-gray);
+  padding: var(--card-padding);
+
+  &--tight {
+    padding: var(--card-tight-padding);
+  }
+
+  @media (min-width: 490px) {
+    &--tight {
+      padding: var(--card-tight-padding) 24px;
+    }
+  }
+}
+
+.custom-collapse {
+  &[open] {
+    > .collapse-content-container {
+      grid-template-rows: 1fr;
+    }
+
+    > [data-action="toggle"] {
+      &::after {
+        content: "-";
+      }
+    }
+
+    .collapse-content {
+      overflow: hidden;
+    }
+  }
+
+  > [data-action="toggle"] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &::after {
+      display: block;
+      content: "+";
+      padding-left: 1rem;
+      font-family: var(--typo-font-family-primary);
+      font-size: 4rem;
+      font-weight: 200;
+    }
+  }
+
+  > .collapse-content-container {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.3s ease;
+    overflow: hidden;
+  }
+
+  .collapse-content {
+    overflow: hidden;
+  }
+}

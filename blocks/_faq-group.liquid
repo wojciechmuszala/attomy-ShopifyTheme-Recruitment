@@ -1,0 +1,48 @@
+{% assign current_block_id = block.id %}
+{% assign current_index = 0 %}
+
+{% for block_item in section.blocks %}
+  {% if block_item.id == current_block_id %}
+    {% assign current_index = forloop.index %}
+  {% endif %}
+{% endfor %}
+
+<ul
+  class="faq__group-list collapse-close-rest{% if current_index == 1 %} active{% endif %}"
+  data-type="faq-group"
+  data-group-name="{{ block.settings.name }}"
+  {{ block.shopify_attributes }}
+>
+  {% content_for 'block', type: '_faq-list', id: 'faq-list' %}
+  {% content_for 'blocks' %}
+</ul>
+
+{% schema %}
+{
+  "name": "t:sections.faq.blocks.faq_group.name",
+  "class": "faq__group",
+  "settings": [
+    {
+      "type": "text",
+      "label": "t:sections.faq.blocks.faq_group.settings.name",
+      "id": "name",
+      "default": "t:sections.faq.blocks.faq_group.settings.name"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "_faq-list"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.faq.blocks.faq_group.presets.faq_group",
+      "blocks": [
+        {
+          "type": "_faq-list"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

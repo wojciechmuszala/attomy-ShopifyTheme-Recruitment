@@ -1,0 +1,42 @@
+<div class="faq__item-wrapper custom-collapse" {{ block.shopify_attributes }}>
+  {%- if block.settings['faq-item-question'] != blank -%}
+    <button class="faq__item-question" data-action="toggle">
+      {{ block.settings['faq-item-question'] }}
+    </button>
+  {%- endif -%}
+
+  {%- if block.settings['faq-item-answer'] != blank -%}
+    <div class="faq__item-answer collapse-content-container">
+      <div class="collapse-content">
+        {{ block.settings['faq-item-answer'] }}
+      </div>
+    </div>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.faq.blocks.faq_item.name",
+  "tag": "li",
+  "class": "faq__item custom-card collapse-content",
+  "settings": [
+    {
+      "type": "text",
+      "label": "t:sections.faq.blocks.faq_item.settings.faq-item-question",
+      "id": "faq-item-question",
+      "default": "t:sections.faq.blocks.faq_item.settings.faq-item-question"
+    },
+    {
+      "type": "richtext",
+      "label": "t:sections.faq.blocks.faq_item.settings.faq-item-answer",
+      "id": "faq-item-answer",
+      "default": "t:sections.faq.blocks.faq_item.settings.faq-item-answer"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.faq.blocks.faq_item.presets.faq_item"
+    }
+  ]
+}
+{% endschema %}

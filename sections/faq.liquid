@@ -1,0 +1,87 @@
+<div class="faq__wrapper page-width">
+  <div class="faq__heading">
+    {% if section.settings.heading_text != blank %}
+      <{{ section.settings.heading_tag }} class="faq__heading-text">
+        {{ section.settings.heading_text }}
+      </{{ section.settings.heading_tag }}>
+    {% endif %}
+  </div>
+  <div class="faq__search" data-type="faq-search" data-not-found="{{ 'sections.faq.no_result' | t }}">
+    <div class="faq__search-input-wrapper">
+      <input class="faq__search-input" type="text" placeholder="{{ 'sections.faq.search_for_answers' | t }}">
+      {% render 'icon-custom-search' %}
+    </div>
+  </div>
+  <nav class="faq__nav" data-type="faq-nav"></nav>
+  <div
+    class="
+      faq__content
+      {% case section.settings.tiles_float %}
+        {% when 'grid' %} grid
+        {% when 'float' %} float
+      {% endcase %}
+    "
+  >
+    {% content_for 'blocks' %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.faq.name",
+  "class": "faq",
+  "tag": "section",
+  "limit": 1,
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading_text",
+      "label": "t:sections.faq.settings.heading_text",
+      "default": "t:sections.faq.settings.heading_text"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "t:sections.faq.settings.heading_tag",
+      "options": [
+        { "value": "h1", "label": "H1" },
+        { "value": "h2", "label": "H2" },
+        { "value": "h3", "label": "H3" },
+        { "value": "h4", "label": "H4" },
+        { "value": "h5", "label": "H5" },
+        { "value": "h6", "label": "H6" },
+        { "value": "p", "label": "P" }
+      ],
+      "default": "h2"
+    },
+    {
+      "type": "radio",
+      "id": "tiles_float",
+      "label": "t:sections.faq.settings.tiles_float.name",
+      "options": [
+        { "value": "grid", "label": "t:sections.faq.settings.tiles_float.options.grid" },
+        { "value": "float", "label": "t:sections.faq.settings.tiles_float.options.float" }
+      ],
+      "default": "grid"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "_faq-group"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.faq.presets.faq_section",
+      "blocks": [
+        {
+          "type": "_faq-group"
+        }
+      ]
+    }
+  ],
+  "enabled_on": {
+    "templates": ["page"]
+  }
+}
+{% endschema %}

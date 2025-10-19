@@ -1,0 +1,89 @@
+<div class="page-hero-banner__image-wrapper">
+  <picture>
+    {%- if section.settings.image_mobile != blank -%}
+      <source
+        media="(max-width: 750px)"
+        srcset="
+          {{ section.settings.image_mobile | image_url: width: 400 }} 400w,
+          {{ section.settings.image_mobile | image_url: width: 600 }} 600w,
+          {{ section.settings.image_mobile | image_url: width: 900 }} 900w
+        "
+        sizes="100vw"
+      >
+    {%- endif -%}
+
+    {%- if section.settings.image_desktop != blank -%}
+      <source
+        media="(min-width: 751px)"
+        srcset="
+          {{ section.settings.image_desktop | image_url: width: 1080 }} 1080w,
+          {{ section.settings.image_desktop | image_url: width: 1440 }} 1440w,
+          {{ section.settings.image_desktop | image_url: width: 1920 }} 1920w,
+          {{ section.settings.image_desktop | image_url: width: 2560 }} 2560w,
+          {{ section.settings.image_desktop | image_url: width: 3840 }} 3840w
+        "
+        sizes="100vw"
+      >
+    {%- endif -%}
+
+    {%- assign fallback_image = section.settings.image_desktop | default: section.settings.image_mobile -%}
+    {%- if fallback_image != blank -%}
+      <img
+        src="{{ fallback_image | image_url: width: 1200 }}"
+        alt="{{ fallback_image.alt | escape }}"
+        class="page-hero-banner__image"
+        loading="lazy"
+        width="1200"
+        height="auto"
+      >
+    {%- else -%}
+      {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg page-hero-banner__image' }}
+    {%- endif -%}
+  </picture>
+</div>
+<div class="page-hero-banner__content">
+  <p class="page-hero-banner__subtitle">{{ section.settings.subtitle }}</p>
+  <h1 class="page-hero-banner__title">{{ section.settings.title }}</h1>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.page_hero_banner.name",
+  "class": "page-hero-banner",
+  "tag": "section",
+  "limit": 1,
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "t:sections.page_hero_banner.settings.title",
+      "default": "t:sections.page_hero_banner.settings.title"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "t:sections.page_hero_banner.settings.subtitle",
+      "default": "t:sections.page_hero_banner.settings.subtitle"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_desktop",
+      "label": "t:sections.page_hero_banner.settings.image_desktop"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "t:sections.page_hero_banner.settings.image_mobile"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.page_hero_banner.presets.page_hero_banner",
+      "category": "Hero"
+    }
+  ],
+  "enabled_on": {
+    "templates": ["page"]
+  }
+}
+{% endschema %}

@@ -1,0 +1,66 @@
+<button class="faq__group-toggle custom-card custom-card--tight" data-action="toggle">
+  <div class="faq__group-data">
+    {% if block.settings['show-image'] == true %}
+      {%- if block.settings.image != blank -%}
+        {%- assign widths = '60,85' -%}
+        {%- capture sizes -%}
+            (min-width: 490px) 85px, 60px
+        {%- endcapture -%}
+
+        {{
+          block.settings.image
+          | image_url: width: 85
+          | image_tag: loading: 'lazy', sizes: sizes, widths: widths, class: 'faq__group-data-image'
+        }}
+      {%- else -%}
+        {{ 'image' | placeholder_svg_tag: 'placeholder-svg faq__group-data-image' }}
+      {%- endif -%}
+    {%- endif -%}
+    <span class="faq__group-data-name">
+      {{ block.settings.name }}
+    </span>
+  </div>
+</button>
+<div class=" faq__list-wrapper collapse-content-container">
+  <ul class="faq__list collapse-content collapse-close-rest" {{ block.shopify_attributes }}>
+    {% content_for 'block', type: '_faq-item', id: 'faq-item' %}
+    {% content_for 'blocks' %}
+  </ul>
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.faq.blocks.faq_list.name",
+  "tag": "li",
+  "class": "faq__group-item custom-collapse scroll-to-element",
+  "settings": [
+    {
+      "type": "text",
+      "label": "t:sections.faq.blocks.faq_list.settings.name",
+      "id": "name",
+      "default": "t:sections.faq.blocks.faq_list.settings.name"
+    },
+    {
+      "type": "checkbox",
+      "id": "show-image",
+      "label": "t:sections.faq.blocks.faq_list.settings.show-image",
+      "default": true
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "t:sections.faq.blocks.faq_list.settings.image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "_faq-item"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.faq.blocks.faq_list.presets.faq_list"
+    }
+  ]
+}
+{% endschema %}
