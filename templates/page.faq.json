@@ -45,7 +45,8 @@
               "name": "Lista pytań o gwarancję",
               "settings": {
                 "name": "Gwarancja – podstawowe informacje",
-                "show-image": true
+                "show-image": true,
+                "image": "shopify://shop_images/snowboard_wax.png"
               },
               "blocks": {
                 "faq_item_nFjXRW": {
@@ -81,6 +82,15 @@
                   "settings": {
                     "faq-item-question": "Ile czasu trwa naprawa produktu w serwisie?",
                     "faq-item-answer": "<p>Naprawa trwa zazwyczaj do 14 dni roboczych od momentu przyjęcia produktu do serwisu.</p>"
+                  },
+                  "blocks": {}
+                },
+                "faq-item": {
+                  "type": "_faq-item",
+                  "static": true,
+                  "settings": {
+                    "faq-item-question": "Question",
+                    "faq-item-answer": "<p>Answer</p>"
                   },
                   "blocks": {}
                 }
@@ -135,6 +145,15 @@
                     "faq-item-answer": "<p>Gwarancja obejmuje wady fabryczne oraz uszkodzenia powstałe w trakcie prawidłowego użytkowania produktu.</p>"
                   },
                   "blocks": {}
+                },
+                "faq-item": {
+                  "type": "_faq-item",
+                  "static": true,
+                  "settings": {
+                    "faq-item-question": "Question",
+                    "faq-item-answer": "<p>Answer</p>"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
@@ -187,6 +206,15 @@
                     "faq-item-answer": "<p>Dane kontaktowe do serwisu znajdują się w zakładce 'Kontakt' na naszej stronie.</p>"
                   },
                   "blocks": {}
+                },
+                "faq-item": {
+                  "type": "_faq-item",
+                  "static": true,
+                  "settings": {
+                    "faq-item-question": "Question",
+                    "faq-item-answer": "<p>Answer</p>"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
@@ -201,7 +229,8 @@
               "static": true,
               "settings": {
                 "name": "Gwarancja i serwis – dodatkowe pytania",
-                "show-image": true
+                "show-image": true,
+                "image": "shopify://shop_images/wax-special.png"
               },
               "blocks": {
                 "faq_item_ktEi9F": {
@@ -248,6 +277,15 @@
                     "faq-item-answer": "<p>Tak, status naprawy można sprawdzić po zalogowaniu się do panelu klienta.</p>"
                   },
                   "blocks": {}
+                },
+                "faq-item": {
+                  "type": "_faq-item",
+                  "static": true,
+                  "settings": {
+                    "faq-item-question": "Question",
+                    "faq-item-answer": "<p>Answer</p>"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
@@ -287,9 +325,20 @@
                     "faq-item-answer": "<p>W naszej ofercie znajdziesz elektronikę użytkową, akcesoria komputerowe oraz sprzęt AGD.</p>"
                   },
                   "blocks": {}
+                },
+                "faq-item": {
+                  "type": "_faq-item",
+                  "static": true,
+                  "settings": {
+                    "faq-item-question": "Question",
+                    "faq-item-answer": "<p>Answer</p>"
+                  },
+                  "blocks": {}
                 }
               },
-              "block_order": ["faq_item_qdBmMf"]
+              "block_order": [
+                "faq_item_qdBmMf"
+              ]
             },
             "faq-list": {
               "type": "_faq-list",
@@ -325,6 +374,15 @@
                     "faq-item-answer": "<p>Tak, do każdego produktu dołączona jest instrukcja w języku polskim.</p>"
                   },
                   "blocks": {}
+                },
+                "faq-item": {
+                  "type": "_faq-item",
+                  "static": true,
+                  "settings": {
+                    "faq-item-question": "Question",
+                    "faq-item-answer": "<p>Answer</p>"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
@@ -334,7 +392,9 @@
               ]
             }
           },
-          "block_order": ["faq_list_bhTL9T"]
+          "block_order": [
+            "faq_list_bhTL9T"
+          ]
         },
         "faq_group_UhtnnT": {
           "type": "_faq-group",
@@ -358,9 +418,20 @@
                     "faq-item-answer": "<p>Zamówienie można złożyć poprzez dodanie produktów do koszyka i wypełnienie formularza zamówienia na stronie.</p>"
                   },
                   "blocks": {}
+                },
+                "faq-item": {
+                  "type": "_faq-item",
+                  "static": true,
+                  "settings": {
+                    "faq-item-question": "Question",
+                    "faq-item-answer": "<p>Answer</p>"
+                  },
+                  "blocks": {}
                 }
               },
-              "block_order": ["faq_item_YPN6cB"]
+              "block_order": [
+                "faq_item_YPN6cB"
+              ]
             }
           },
           "block_order": []
@@ -403,6 +474,15 @@
                   "settings": {
                     "faq-item-question": "Jaki jest przewidywany czas dostawy?",
                     "faq-item-answer": "<p>Standardowy czas dostawy wynosi 1-3 dni robocze od momentu wysyłki.</p>"
+                  },
+                  "blocks": {}
+                },
+                "faq-item": {
+                  "type": "_faq-item",
+                  "static": true,
+                  "settings": {
+                    "faq-item-question": "Question",
+                    "faq-item-answer": "<p>Answer</p>"
                   },
                   "blocks": {}
                 }
@@ -456,6 +536,15 @@
                     "faq-item-answer": "<p>Zwrot środków następuje do 14 dni od momentu otrzymania zwróconego produktu.</p>"
                   },
                   "blocks": {}
+                },
+                "faq-item": {
+                  "type": "_faq-item",
+                  "static": true,
+                  "settings": {
+                    "faq-item-question": "Question",
+                    "faq-item-answer": "<p>Answer</p>"
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
@@ -483,5 +572,9 @@
       }
     }
   },
-  "order": ["page_hero_banner_fXjiA6", "page_contact_gg8Nai", "faq_aVqQTB"]
+  "order": [
+    "page_hero_banner_fXjiA6",
+    "page_contact_gg8Nai",
+    "faq_aVqQTB"
+  ]
 }
