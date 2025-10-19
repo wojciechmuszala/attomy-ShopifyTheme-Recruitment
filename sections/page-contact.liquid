@@ -47,19 +47,20 @@
 
 {% schema %}
 {
-  "name": "Contact section",
+  "name": "t:sections.page_contact.name",
   "tag": "section",
   "class": "page-contact page-width",
+  "limit": 1,
   "settings": [
     {
       "type": "text",
       "id": "title",
-      "label": "Title"
+      "label": "t:sections.page_contact.settings.title"
     },
     {
       "type": "select",
       "id": "heading_tag",
-      "label": "Heading tag",
+      "label": "t:sections.page_contact.settings.heading_tag",
       "options": [
         { "value": "h1", "label": "H1" },
         { "value": "h2", "label": "H2" },
@@ -74,38 +75,32 @@
     {
       "type": "text",
       "id": "phone",
-      "label": "Phone number"
+      "label": "t:sections.page_contact.settings.phone"
     },
     {
       "type": "text",
       "id": "availability",
-      "label": "Availability (hours)"
+      "label": "t:sections.page_contact.settings.availability"
     },
     {
       "type": "text",
       "id": "button_text",
-      "label": "Button text"
+      "label": "t:sections.page_contact.settings.button_text"
     },
     {
       "type": "radio",
       "id": "button_style",
-      "label": "Button style",
+      "label": "t:sections.page_contact.settings.button_style.name",
       "options": [
-        {
-          "value": "primary",
-          "label": "Primary"
-        },
-        {
-          "value": "secondary",
-          "label": "Secondary"
-        }
+        { "value": "primary", "label": "t:sections.page_contact.settings.button_style.options.primary" },
+        { "value": "secondary", "label": "t:sections.page_contact.settings.button_style.options.secondary" }
       ],
       "default": "primary"
     }
   ],
   "presets": [
     {
-      "name": "Contact Card"
+      "name": "t:sections.page_contact.presets.contact_card"
     }
   ],
   "enabled_on": {

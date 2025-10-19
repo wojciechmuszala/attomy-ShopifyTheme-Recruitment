@@ -3302,14 +3302,35 @@
       }
     },
     "page_hero_banner": {
-      "name": "Baner strony",
+      "name": "Baner strony - Hero",
       "settings": {
         "title": "Tytuł",
         "subtitle": "Podtytuł",
-        "background_image": "Obraz tła"
+        "image_desktop": "Obraz desktop",
+        "image_mobile": "Obraz mobile"
       },
       "presets": {
-        "page_hero_banner": "Baner strony"
+        "page_hero_banner": "Baner strony - Hero"
+      }
+    },
+    "page_contact": {
+      "name": "Sekcja kontaktowa strony",
+      "settings": {
+        "title": "Tytuł",
+        "heading_tag": "Znacznik nagłówka",
+        "phone": "Numer telefonu",
+        "availability": "Dostępność (godziny)",
+        "button_text": "Tekst przycisku",
+        "button_style": {
+          "name": "Styl przycisku",
+          "options": {
+            "primary": "Podstawowy",
+            "secondary": "Drugorzędny"
+          }
+        }
+      },
+      "presets": {
+        "contact_card": "Sekcja kontaktowa strony"
       }
     },
     "faq": {

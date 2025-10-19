@@ -7,7 +7,6 @@
     {% endif %}
   </div>
   <div class="faq__search" data-type="faq-search" data-not-found="{{ 'sections.faq.no_result' | t }}">
-    {% comment %} TODO: tlumaczenia placeholdera {% endcomment %}
     <div class="faq__search-input-wrapper">
       <input class="faq__search-input" type="text" placeholder="{{ 'sections.faq.search_for_answers' | t }}">
       {% render 'icon-custom-search' %}
@@ -32,6 +31,7 @@
   "name": "t:sections.faq.name",
   "class": "faq",
   "tag": "section",
+  "limit": 1,
   "settings": [
     {
       "type": "text",

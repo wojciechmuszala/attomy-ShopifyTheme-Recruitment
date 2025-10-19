@@ -3302,14 +3302,35 @@
       }
     },
     "page_hero_banner": {
-      "name": "Page Hero Banner",
+      "name": "Page hero banner",
       "settings": {
         "title": "Title",
         "subtitle": "Subtitle",
-        "background_image": "Background image"
+        "image_desktop": "Image desktop",
+        "image_mobile": "Image mobile"
       },
       "presets": {
-        "page_hero_banner": "Page Hero Banner"
+        "page_hero_banner": "Page hero banner"
+      }
+    },
+    "page_contact": {
+      "name": "Page contact section",
+      "settings": {
+        "title": "Title",
+        "heading_tag": "Heading tag",
+        "phone": "Phone number",
+        "availability": "Availability (hours)",
+        "button_text": "Button text",
+        "button_style": {
+          "name": "Button style",
+          "options": {
+            "primary": "Primary",
+            "secondary": "Secondary"
+          }
+        }
+      },
+      "presets": {
+        "contact_card": "Page contact section"
       }
     },
     "faq": {

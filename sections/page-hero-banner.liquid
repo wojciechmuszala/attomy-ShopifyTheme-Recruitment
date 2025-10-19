@@ -48,36 +48,37 @@
 
 {% schema %}
 {
-  "name": "Hero Banner",
-  "tag": "section",
+  "name": "t:sections.page_hero_banner.name",
   "class": "page-hero-banner",
+  "tag": "section",
+  "limit": 1,
   "settings": [
     {
       "type": "text",
       "id": "title",
-      "label": "Title",
-      "default": "Twój tytuł tutaj"
+      "label": "t:sections.page_hero_banner.settings.title",
+      "default": "t:sections.page_hero_banner.settings.title"
     },
     {
       "type": "text",
       "id": "subtitle",
-      "label": "Subtitle",
-      "default": "Twój podtytuł tutaj"
+      "label": "t:sections.page_hero_banner.settings.subtitle",
+      "default": "t:sections.page_hero_banner.settings.subtitle"
     },
     {
       "type": "image_picker",
       "id": "image_desktop",
-      "label": "Image desktop"
+      "label": "t:sections.page_hero_banner.settings.image_desktop"
     },
     {
       "type": "image_picker",
       "id": "image_mobile",
-      "label": "Image mobile"
+      "label": "t:sections.page_hero_banner.settings.image_mobile"
     }
   ],
   "presets": [
     {
-      "name": "Hero Banner",
+      "name": "t:sections.page_hero_banner.presets.page_hero_banner",
       "category": "Hero"
     }
   ],
