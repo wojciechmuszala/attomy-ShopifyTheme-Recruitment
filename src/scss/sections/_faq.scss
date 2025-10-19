@@ -248,10 +248,6 @@
           break-inside: avoid;
         }
       }
-
-      .faq__content.absolute & {
-        overflow: unset;
-      }
     }
 
     &-question {
@@ -272,18 +268,6 @@
     &-answer {
       padding: 0 var(--card-padding);
       font-size: var(--typo-font-size-s);
-
-      .faq__content.absolute & {
-        position: absolute;
-        top: calc(100% - var(--border-radius-big));
-        z-index: 1;
-        background-color: var(--color-white);
-        border-left: 1px solid var(--color-gray);
-        border-right: 1px solid var(--color-gray);
-        // border-bottom: 1px solid var(--color-gray);
-        border-radius: 0 0 var(--border-radius-big) var(--border-radius-big);
-        margin: 0 -1px;
-      }
 
       .collapse-content {
         margin: 0 0 var(--card-padding);
