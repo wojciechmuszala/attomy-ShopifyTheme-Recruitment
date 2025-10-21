@@ -102,6 +102,7 @@
       border: 1px solid var(--color-navy-blue);
       border-radius: 100vmax;
       font-size: var(--typo-font-size-s);
+      font-family: var(--typo-font-family-secondary);
       line-height: 110%;
       letter-spacing: -2%;
       cursor: pointer;
@@ -207,6 +208,10 @@
         width: 85px;
         height: 85px;
       }
+    }
+
+    &-data-name {
+      font-family: var(--typo-font-family-secondary);
     }
   }
 
