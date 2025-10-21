@@ -1,4 +1,4 @@
-<button class="faq__group-toggle custom-card custom-card--tight" data-action="toggle">
+<button class="faq__group-toggle custom-card custom-card--tight" data-action="toggle" {{ block.shopify_attributes }}>
   <div class="faq__group-data">
     {% if block.settings['show-image'] == true %}
       {%- if block.settings.image != blank -%}
@@ -21,11 +21,13 @@
     </span>
   </div>
 </button>
-<div class=" faq__list-wrapper collapse-content-container">
-  <ul class="faq__list collapse-content collapse-close-rest" {{ block.shopify_attributes }}>
-    {% content_for 'block', type: '_faq-item', id: 'faq-item' %}
-    {% content_for 'blocks' %}
-  </ul>
+<div class="faq__list-container collapse-content-container">
+  <div class="faq__list-wrapper collapse-content collapse-close-rest">
+    <ul class="faq__list">
+      {% content_for 'block', type: '_faq-item', id: 'faq-item' %}
+      {% content_for 'blocks' %}
+    </ul>
+  </div>
 </div>
 
 {% schema %}
