@@ -1,11 +1,11 @@
 <div class="faq__wrapper page-width">
-  <div class="faq__heading">
-    {% if section.settings.heading_text != blank %}
+  {% if section.settings.heading_text != blank %}
+    <div class="faq__heading">
       <{{ section.settings.heading_tag }} class="faq__heading-text">
         {{ section.settings.heading_text }}
       </{{ section.settings.heading_tag }}>
-    {% endif %}
-  </div>
+    </div>
+  {% endif %}
   <div class="faq__search" data-type="faq-search" data-not-found="{{ 'sections.faq.no_result' | t }}">
     <div class="faq__search-input-wrapper">
       <input class="faq__search-input" type="text" placeholder="{{ 'sections.faq.search_for_answers' | t }}">
